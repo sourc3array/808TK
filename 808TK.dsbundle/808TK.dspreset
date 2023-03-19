@@ -2,7 +2,7 @@
 <DecentSampler minVersion="1.0.0">
 
         <ui width="812" height="375" coverArt="Images/808TK_bkgnd_1624x750.png" bgImage="Images/808TK_bkgnd_1624x750.png" bgColor="#1B1C1E">
-                <tab name="main"></tab>
+                <tab name="main" />
                 <keyboard>
                         <color loNote="35" hiNote="36" color="FF2F4858" /><!-- Kick + Kick (SUB) -->
                         <color loNote="41" hiNote="41" color="FF3F507A" /><!-- Low Tom -->
@@ -40,13 +40,13 @@
                         <sample loNote="38" rootNote="38" hiNote="38" path="Samples/wa_808tape_snare_01_clean.wav" />
 
                         <!-- 06 :: SNARE B (ALT) -->
-                        <sample loNote="40" rootNote="40" hiNote="40" path="Samples/sample=wa_808tape_snare_30_clean.wav" />
+                        <sample loNote="40" rootNote="40" hiNote="40" path="Samples/wa_808tape_snare_30_clean.wav" />
 
                         <!-- 07 :: ALT A (RIM) -->
                         <sample loNote="37" rootNote="37" hiNote="37" path="Samples/wa_808tape_rim_02_clean.wav" />
 
                         <!-- 08 :: ALT B (CLAP) -->
-                        <sample loNote="39" rootNote="39" hiNote="39" path="Samples/wa_808tape_hitom_01_clean.wav" />
+                        <sample loNote="39" rootNote="39" hiNote="39" path="Samples/wa_808tape_clap_04_clean.wav" />
 
                 </group>
 
