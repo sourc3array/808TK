@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <DecentSampler minVersion="1.0.0">
 
         <ui width="812" height="375" coverArt="Images/808TK_bkgnd_1624x750.png" bgImage="Images/808TK_bkgnd_1624x750.png" bgColor="#1B1C1E">
@@ -9,7 +10,14 @@
                         <color loNote="43" hiNote="43" color="FF3F507A" /><!-- High Tom -->
                         <color loNote="38" hiNote="38" color="FF754E8B" /><!-- Snare -->
                         <color loNote="40" hiNote="40" color="FF754E8B" /><!-- Snare (ALT) -->
-                </keyboard>
+                        <color loNote="42" hiNote="42" color="FFB1407D" /><!-- Close Hat -->
+                        <color loNote="44" hiNote="45" color="FFB1407D" /><!-- Closed Hat (CHIK) + Mid Hat -->
+                        <color loNote="47" hiNote="47" color="FFB1407D" /><!-- Ooen Hat -->
+                        <color loNote="48" hiNote="48" color="FFD93D52" /><!-- Crash -->
+                        <color loNote="50" hiNote="50" color="FFD93D52" /><!-- Crash (ALT) -->
+                        <color loNote="46" hiNote="46" color="FFDC5F00" /><!-- Clave -->
+                        <color loNote="49" hiNote="49" color="FFDC5F00" /><!-- Maracas (FX) -->
+               </keyboard>
         </ui>
 
         <groups attack="0.000" decay="25" sustain="1.0" release="0.430" volume="-3dB" >
@@ -52,9 +60,33 @@
 
                 <!-- HI-HATS -->
 
+                        <!-- 09 :: CLOSED Hi-HAT -->
+                        <sample loNote="42" rootNote="42" hiNote="42" path="Samples/wa_808tape_closedhat_01_clean.wav" />
+
+                        <!-- 10 :: CLOSED Hi-HAT (CHIK) -->
+                        <sample loNote="44" rootNote="44" hiNote="44" path="Samples/wa_808tape_closedhat_10_clean.wav" />
+
+                        <!-- 11 :: MID Hi-HAT -->
+                        <sample loNote="45" rootNote="45" hiNote="45" path="Samples/wa_808tape_openhat_01_clean.wav" />
+
+                        <!-- 12 :: OPEN Hi-HAT -->
+                        <sample loNote="47" rootNote="47" hiNote="47" path="Samples/wa_808tape_openhat_03_clean.wav" />
+
                 <!-- CYMBALS -->
 
+                        <!-- 13 :: CRASH -->
+                        <sample loNote="48" rootNote="48" hiNote="48" path="Samples/wa_808tape_crash_04_clean.wav" />
+
+                        <!-- 14 :: CRASH) (ALT) -->
+                        <sample loNote="50" rootNote="50" hiNote="50" path="Samples/wa_808tape_crash_01_clean.wav" />
+
                 <!-- PERCUSSION -->
+
+                        <!-- 15 :: CLAVE -->
+                        <sample loNote="46" rootNote="46" hiNote="46" path="Samples/wa_808tape_clave_02_clean.wav" />
+
+                        <!-- 16 :: MARACAS (FX) -->
+                        <sample loNote="49" rootNote="49" hiNote="49" path="Samples/wa_808tape_maracas_04_clean.wav" />
 
         </groups>
 
