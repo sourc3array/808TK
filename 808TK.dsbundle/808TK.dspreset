@@ -4,8 +4,11 @@
         <ui width="812" height="375" coverArt="Images/808TK_bkgnd_1624x750.png" bgImage="Images/808TK_bkgnd_1624x750.png" bgColor="#1B1C1E">
                 <tab name="main"></tab>
                 <keyboard>
-                        <color loNote="35" hiNote="36" color="FF2C365E" />
-                        <color loNote="41" hiNote="43" color="FF2C365E" />
+                        <color loNote="35" hiNote="36" color="FF2F4858" /><!-- Kick + Kick (SUB) -->
+                        <color loNote="41" hiNote="41" color="FF3F507A" /><!-- Low Tom -->
+                        <color loNote="43" hiNote="43" color="FF3F507A" /><!-- High Tom -->
+                        <color loNote="38" hiNote="38" color="FF754E8B" /><!-- Snare -->
+                        <color loNote="40" hiNote="40" color="FF754E8B" /><!-- Snare (ALT) -->
                 </keyboard>
         </ui>
 
@@ -30,6 +33,22 @@
                 </group>
 
                 <!-- SNARES -->
+
+                <group>
+
+                        <!-- 05 :: SNARE A -->
+                        <sample loNote="38" rootNote="38" hiNote="38" path="Samples/wa_808tape_snare_01_clean.wav" />
+
+                        <!-- 06 :: SNARE B (ALT) -->
+                        <sample loNote="40" rootNote="40" hiNote="40" path="Samples/sample=wa_808tape_snare_30_clean.wav" />
+
+                        <!-- 07 :: ALT A (RIM) -->
+                        <sample loNote="37" rootNote="37" hiNote="37" path="Samples/wa_808tape_rim_02_clean.wav" />
+
+                        <!-- 08 :: ALT B (CLAP) -->
+                        <sample loNote="39" rootNote="39" hiNote="39" path="Samples/wa_808tape_hitom_01_clean.wav" />
+
+                </group>
 
                 <!-- HI-HATS -->
 
