@@ -1,0 +1,83 @@
+//------------------------------------------------------------------------------
+//  genAudio :: SFZ Construction Kit
+//              Wave Alchemy :: 808 Tape
+//                              CONFIG :: V1.00
+//------------------------------------------------------------------------------
+//  SFZ coding by SOURC3ARRAY                 https://soundcloud.com/sourc3array
+//------------------------------------------------------------------------------
+
+<control>
+
+default_path= /
+
+<global>
+
+//------------------------------------------------------------------------------
+//  KEY MAP: MIDI NOTES
+
+#define $KIK_01_KEY 35  // DRUMS
+#define $KIK_02_KEY 36
+#define $TOM_01_KEY 41
+#define $TOM_02_KEY 43
+
+#define $SNR_01_KEY 38  // SNARES
+#define $SNR_02_KEY 40
+#define $ALT_01_KEY 37
+#define $ALT_02_KEY 39
+
+#define $HAT_01_KEY 42  // HI-HATS
+#define $HAT_02_KEY 44
+#define $HAT_03_KEY 45      
+#define $HAT_04_KEY 47       
+
+#define $CYM_01_KEY 48  // CYMBALS
+#define $CYM_02_KEY 50
+#define $PRC_01_KEY 46  // PERCUSSION
+#define $PRC_02_KEY 49
+
+//------------------------------------------------------------------------------
+//  DEFAULT ADSR ENVELOPE
+
+ampeg_delay=0.000
+ampeg_attack=0.002      // AHD = 0.064 ms
+ampeg_hold=0.012
+ampeg_decay=0.050
+ampeg_sustain=52        // Sustain notes at 52% volume
+ampeg_release=0.007
+
+//------------------------------------------------------------------------------
+//  MISCELLANEOUS
+
+trigger=attack          // Regions will play on note-on
+amp_veltrack=87         // Amplitude change relative to incoming note velocity
+
+loop_mode=one_shot      // Set default LOOP MODE to ONE-SHOT
+delay_random=0.012      // Set max random sample delay time in ms (humanize)
+
+//------------------------------------------------------------------------------
+//  CC IDs for CONTROLS
+
+#define $KIK_01_LEVEL 14
+#define $KIK_02_LEVEL 15
+#define $TOM_01_LEVEL 20
+#define $TOM_02_LEVEL 21
+#define $SNR_01_LEVEL 22
+#define $SNR_02_LEVEL 23
+#define $ALT_01_LEVEL 24
+#define $ALT_02_LEVEL 25
+#define $HAT_01_LEVEL 26
+#define $HAT_02_LEVEL 27
+#define $HAT_03_LEVEL 28
+#define $HAT_04_LEVEL 29
+#define $CYM_01_LEVEL 30
+#define $CYM_02_LEVEL 31
+#define $PRC_01_LEVEL 85
+#define $PRC_02_LEVEL 86
+
+//------------------------------------------------------------------------------
+//  INCLUDES
+
+#include "Programs/gA_808TK_Drums.sfz"
+#include "Programs/gA_808TK_Snares.sfz"
+#include "Programs/gA_808TK_Hats.sfz"
+#include "Programs/gA_808TK_CymPerc.sfz"

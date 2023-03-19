@@ -1,0 +1,88 @@
+//------------------------------------------------------------------------------
+//  genAudio :: SFZ Construction Kit
+//              Wave Alchemy :: 808 Tape
+//                              SNARES :: V1.00
+//------------------------------------------------------------------------------
+//  SFZ coding by SOURC3ARRAY                 https://soundcloud.com/sourc3array
+//------------------------------------------------------------------------------
+
+<control>
+
+default_path=Samples/
+
+set_cc$SNR_01_LEVEL=117         // Set Dial: 92%
+set_cc$SNR_02_LEVEL=117
+set_cc$ALT_01_LEVEL=117
+set_cc$ALT_02_LEVEL=117
+
+label_cc$SNR_01_LEVEL=(V) SNARE
+label_cc$SNR_02_LEVEL=(V) SNARE (ALT)
+label_cc$ALT_01_LEVEL=(V) RIM
+label_cc$ALT_02_LEVEL=(V) CLAP
+
+//------------------------------------------------------------------------------
+// 01 :: SNARE A
+
+<group>
+
+key=$SNR_01_KEY
+
+amplitude_oncc$SNR_01_LEVEL=96  // Amplitude: 96%
+
+cutoff=12000 resonance=6        // LP Filter: 12 KHz
+fil2_type=hpf_2p
+cutoff2=180 resonance2=3        // HP Filter: 180 Hz
+
+<region>           hivel=63  amp_velcurve_3=0.10 sample=wa_808tape_snare_01_clean.wav
+<region> lovel=64  hivel=103 amp_velcurve_2=0.05 sample=wa_808tape_snare_01_sat.wav
+<region> lovel=104           amp_velcurve_1=0.00 sample=wa_808tape_snare_01_sat2.wav
+
+//------------------------------------------------------------------------------
+// 02 :: SNARE B (ALT)
+
+<group>
+ 
+key=$SNR_02_KEY
+ 
+amplitude_oncc$SNR_02_LEVEL=94  // Amplitude: 94%
+
+cutoff=10000 resonance=6        // LP Filter: 10 KHz
+fil2_type=hpf_2p
+cutoff2=150 resonance2=3        // HP Filter: 150 Hz
+
+<region>           hivel=63  amp_velcurve_3=0.10 sample=wa_808tape_snare_30_clean.wav
+<region> lovel=64  hivel=103 amp_velcurve_2=0.05 sample=wa_808tape_snare_30_sat.wav
+<region> lovel=104           amp_velcurve_1=0.00 sample=wa_808tape_snare_30_sat2.wav
+
+<region>           hivel=82  amp_velcurve_3=0.10 sample=wa_808tape_snare_01_clean.wav amplitude=14 eg01_pitch=1150 resonance=1.50 pan=-12
+<region> lovel=83            amp_velcurve_2=0.05 sample=wa_808tape_snare_01_sat.wav   amplitude=13 eg01_pitch=1200 resonance=2.00 pan=-18
+
+//------------------------------------------------------------------------------
+// 03 :: ALT A (RIM)
+
+<group>
+
+key=$ALT_01_KEY
+
+amplitude_oncc$ALT_01_LEVEL=96  // Amplitude: 96%
+pan=-12                         // Panning: 12% (L)
+
+<region>           hivel=63  amp_velcurve_3=0.10 sample=wa_808tape_rim_02_clean.wav eg01_pitch=-50 
+<region> lovel=64  hivel=103 amp_velcurve_2=0.05 sample=wa_808tape_rim_02_sat.wav   eg01_pitch=-25 
+<region> lovel=104           amp_velcurve_1=0.00 sample=wa_808tape_rim_02_sat2.wav  eg01_pitch=0 
+
+//------------------------------------------------------------------------------
+// 04 :: ALT B (CLAP)
+
+<group>
+
+key=$ALT_02_KEY
+
+amplitude_oncc$ALT_02_LEVEL=94  // Amplitude: 94%
+pan=-30                         // Panning: 30% (L)
+
+cutoff=2400  resonance=1.00     // LP Filter: 2.4 KHz
+
+<region>           hivel=63  amp_velcurve_3=0.10 sample=wa_808tape_clap_04_clean.wav
+<region> lovel=64  hivel=103 amp_velcurve_2=0.05 sample=wa_808tape_clap_04_sat.wav
+<region> lovel=104           amp_velcurve_1=0.00 sample=wa_808tape_clap_04_sat2.wav

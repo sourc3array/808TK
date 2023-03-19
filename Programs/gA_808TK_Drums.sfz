@@ -1,0 +1,107 @@
+//------------------------------------------------------------------------------
+//  genAudio :: SFZ Construction Kit
+//              Wave Alchemy :: 808 Tape
+//                              DRUMS :: V1.00
+//------------------------------------------------------------------------------
+//  SFZ coding by SOURC3ARRAY                 https://soundcloud.com/sourc3array
+//------------------------------------------------------------------------------
+
+<control>
+
+default_path=Samples/
+
+set_cc$KIK_01_LEVEL=117             // Set Dial: 92%
+set_cc$KIK_02_LEVEL=117
+set_cc$TOM_01_LEVEL=117
+set_cc$TOM_02_LEVEL=117
+
+label_cc$KIK_01_LEVEL=(V) KICK (SUB)
+label_cc$KIK_02_LEVEL=(V) KICK
+label_cc$TOM_01_LEVEL=(V) LO TOM
+label_cc$TOM_02_LEVEL=(V) HI TOM  
+
+//------------------------------------------------------------------------------
+// 01 :: KICK A (SUB)
+
+<group>
+
+key=$KIK_01_KEY
+
+amplitude_oncc$KIK_01_LEVEL=92      // Amplitude: 92%
+width=0                             // Stereo Width: 0% (Mono)
+cutoff=150 resonance=6              // Low-Pass Filter: 150 Hz
+
+<region>           hivel=63  amp_velcurve_3=0.10 sample=wa_808tape_kick_01_clean.wav eg01_pitch=-1150
+<region> lovel=64  hivel=103 amp_velcurve_2=0.05 sample=wa_808tape_kick_01_sat.wav   eg01_pitch=-1175
+<region> lovel=104           amp_velcurve_1=0.00 sample=wa_808tape_kick_01_sat.wav   eg01_pitch=-1200
+
+<region>                     amp_velcurve_4=0.15 sample=wa_808tape_crash_01_sat2.wav eg01_pitch=-1200
+
+off_mode=normal 
+amplitude=54                        // Amplitude: 54%
+pan=-30                             // Panning: 30% (L)
+ampeg_delay=0.242                   // Delay: 1/8 note @ 124 BPM (242 ms)
+ampeg_attack=0.030                  // Attack: 30 ms
+ampeg_decay=0.968                   // Decay: 968 ms
+cutoff=400 resonance=1.50           // Low-Pass Filter: 400 Hz
+
+<region>                     amp_velcurve_4=0.15 sample=wa_808tape_maracas_04_sat2.wav eg01_pitch=-1200
+
+amplitude=42                        // Amplitude: 42%
+pan=30                              // Panning: (R) 30%
+ampeg_attack=0.030                  // Attack: 30 ms
+cutoff=800 resonance=1.00           // Low-Pass Filter: 800 Hz
+
+//------------------------------------------------------------------------------
+// 02 :: KICK B
+
+<group>
+ 
+key=$KIK_02_KEY
+ 
+amplitude_oncc$KIK_02_LEVEL=96      // Amplitude: 96%
+width=12                            // Stereo Width: 12%
+cutoff=2000 resonance=2.00          // Low-Pass Filter: 2 kHz
+ 
+<region>           hivel=63  amp_velcurve_3=0.10 sample=wa_808tape_kick_23_clean.wav
+<region> lovel=64  hivel=103 amp_velcurve_2=0.05 sample=wa_808tape_kick_23_sat.wav
+<region> lovel=104           amp_velcurve_1=0.00 sample=wa_808tape_kick_23_sat2.wav
+
+<region>           hivel=82  amp_velcurve_3=0.10 sample=wa_808tape_kick_01_sat.wav  amplitude=86 cutoff=240
+<region> lovel=83            amp_velcurve_2=0.05 sample=wa_808tape_kick_01_sat2.wav amplitude=86 cutoff=180 eg01_pitch=-50
+-
+//------------------------------------------------------------------------------
+// 03 :: TOM A (LOW)
+
+<group>
+
+key=$TOM_01_KEY
+
+amplitude_oncc$TOM_01_LEVEL=92      // Amplitude: 92%
+pan=24                              // Panning: (R) 24% 
+cutoff=800 resonance=2.00           // Low-Pass Filter: 800 Hz
+
+<region>           hivel=63  amp_velcurve_3=0.10 sample=wa_808tape_lotom_02_clean.wav eg01_pitch=0 
+<region> lovel=64  hivel=103 amp_velcurve_2=0.05 sample=wa_808tape_lotom_02_sat.wav   eg01_pitch=-25 
+<region> lovel=104           amp_velcurve_1=0.00 sample=wa_808tape_lotom_02_sat2.wav  eg01_pitch=-50 
+
+<region>           hivel=82  amp_velcurve_3=0.10 sample=wa_808tape_midtom_01_clean.wav amplitude=86 eg01_pitch=-1150 resonance=2.50 pan=12
+<region> lovel=83            amp_velcurve_2=0.05 sample=wa_808tape_midtom_01_sat.wav   amplitude=86 eg01_pitch=-1200 resonance=3.00 pan=30
+
+//------------------------------------------------------------------------------
+// 04 :: TOM B (HIGH)
+
+<group>
+
+key=$TOM_02_KEY
+
+amplitude_oncc$TOM_02_LEVEL=72      // Amplitude: 72%
+pan=36                              // Panning: (R) 36%
+cutoff=2400 resonance=1.00          // Low-Pass Filter: 2.4 MHz
+
+<region>           hivel=63  amp_velcurve_3=0.10 sample=wa_808tape_hitom_01_clean.wav
+<region> lovel=64  hivel=103 amp_velcurve_2=0.05 sample=wa_808tape_hitom_01_sat.wav
+<region> lovel=104           amp_velcurve_1=0.00 sample=wa_808tape_hitom_01_sat2.wav
+
+<region>           hivel=82  amp_velcurve_3=0.10 sample=wa_808tape_midtom_01_sat.wav  amplitude=86 eg01_pitch=-50 resonance=2.50 pan=18
+<region> lovel=83            amp_velcurve_2=0.05 sample=wa_808tape_midtom_01_sat2.wav amplitude=86 eg01_pitch=0   resonance=3.00 pan=36
