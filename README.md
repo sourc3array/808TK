@@ -1,6 +1,6 @@
-# genAudio - 808TK (SFZ)
+# genAudio - 808TK (DS)
 
-The **808TK** is a virtual drum kit instrument in the open-standard [SFZ file format](https://sfzformat.com/) that utilizes the free [**808 Tape**](https://www.wavealchemy.co.uk/product/808-tape/) sample library from [*Wave Alchemy*](https://www.wavealchemy.co.uk/).
+The **808TK** is a virtual drum kit instrument for [Decent Sampler](https://www.decentsamples.com/product/decent-sampler-plugin/) that utilizes the free [**808 Tape**](https://www.wavealchemy.co.uk/product/808-tape/) sample library from [*Wave Alchemy*](https://www.wavealchemy.co.uk/).
 
 
 1.  Compatibility
@@ -21,19 +21,19 @@ The **808TK** is a virtual drum kit instrument in the open-standard [SFZ file fo
 
 ## Compatibility
 
-The **808TK** is designed for use with SFZ sample players and audio plug-ins.
+The **808TK** is designed for use with Decent Sampler.
 
-## Installation
+## Installation (NOT IMPLEMENTED)
 
 1.  Download the free **808 Tape** sample library from *Wave Alchemy*:
 
     https://www.wavealchemy.co.uk/product/808-tape/
 
-2.  Open the 'genAudio_808TK_SFZ' folder and populate the empty 'Samples' folder with the sample files located in the 'wa_808_tape' folder from *Wave Alchemy*.
+2.  Open the 'genAudio_808TK_DS' folder and populate the empty 'Samples' folder with the sample files located in the 'wa_808_tape' folder from *Wave Alchemy*.
 
-3.  Load the instrument file 'genAudio_808TK.sfz' into your SFZ plug-in or stand-alone player.
+3.  Load the '808TK.dsbundle' instrument into your Decent Sampler plug-in or stand-alone player.
 
-## 808TK Overview
+## 808TK Overview (NOT IMPLEMENTED)
 
 The **808TK** features fifty-three (53) 24-bit drum samples layered over sixteen (16) individual sound pads. The sound bank has been curated for optimal use with 4x4 drum pad controllers and finger drumming:
 
@@ -45,24 +45,24 @@ The **808TK** features fifty-three (53) 24-bit drum samples layered over sixteen
 
 Each drum pad contains multiple velocity layers to provide clean, saturated and driven variations for each sound. The velocity ranges follow a non-linear progression, pushing the drive articulations into the upper velocity range. This gives the drum kit a *sweet spot* at higher volumes that plays like the power band of an internal combustion engine. Several pads feature additional sample layers and sound design nuances, giving the **808TK** its unique sonic texture. All pads feature an independent Volume control, with an additional Tight control for the hi-hats. Muting has been implemented for each cymbal for enhanced realism and playability.
 
-## Controls
+## Controls (NOT IMPLEMENTED)
 
 The **808TK** provides controls for:
 
   - (V) **Volume**: Sets the volume for each individual pad
   - (T) **Tight**: Varies the openness of the Mid Hat
 
-### Continuous Controllers
+### Continuous Controllers (NOT IMPLEMENTED)
 
 Controls are assigned to MIDI CCs for automation in DAWs, linking to hardware MIDI controllers, live performance, etc. See the [Continuous Controller IDs](#continuous-controller-ids) section below for a complete list of CC IDs and their assignments.
 
-## Customization
+## Customization  (NOT IMPLEMENTED)
 
 TBD
 
 ## MIDI Reference
 
-### Key Note Mapping
+### Key Note Mapping (NOT IMPLEMENTED)
 
 Default MIDI numbers and note names for the **808TK**:
 
@@ -86,7 +86,7 @@ Default MIDI numbers and note names for the **808TK**:
   - 46 - Clave -- A#1
   - 49 - Maracas (FX) -- C#2
 
-### Continuous Controller IDs
+### Continuous Controller IDs  (NOT IMPLEMENTED)
 
 The (T) Tight control for the Mid Hat is assigned to the MIDI default for *Foot Pedals*.
 
@@ -120,7 +120,11 @@ If you have any questions, concerns, bug reports, etc., please file an issue in 
 
 ## Getting Involved
 
-[Contribute](CONTRIBUTING.md) to the **808 Tape Kit (SFZ)** and the *genAudio Project* with your constructive feedback and feature requests.
+[Contribute](CONTRIBUTING.md) to the **808 Tape Kit (DS)** with:
+
+  - Code for Decent Sampler implementations of features from the original SFZ version
+  - Constructive feedback
+  - Feature requests
 
 
 ----
@@ -133,11 +137,12 @@ If you have any questions, concerns, bug reports, etc., please file an issue in 
 
 ### Credits
 
-1. SFZ programming and sound design by [SOURC3ARRAY](https://soundcloud.com/sourc3array).
+1. Decent Sampler and original SFZ programming and sound design by [SOURC3ARRAY](https://soundcloud.com/sourc3array).
 
 ### References
 
-1. [808 Tape](https://www.wavealchemy.co.uk/product/808-tape/) is a free collection of TR-808 drum machine samples recorded directly to 1/4″ analogue tape.
-2. [sforzando](https://www.plogue.com/products/sforzando.html) is a free, SFZ 2.0 compliant sample player.
-2. [SFZFormat](https://sfzformat.com/) provides an overview and reference for the SFZ file format.
-3. [Wave Alchemy](https://www.wavealchemy.co.uk/) makes award-winning virtual instruments, samples and FX.
+1. [808TK (SFZ}](https://github.com/sourc3array/genAudio_808TK_SFZ): Virtual drum kit instrument for SFZ utilizing the 808 Tape sample library from Wave Alchemy.
+2. [808 Tape](https://www.wavealchemy.co.uk/product/808-tape/): Free collection of TR-808 drum machine samples recorded directly to 1/4″ analogue tape.
+3. [sforzando](https://www.plogue.com/products/sforzando.html): Free SFZ sample player.
+4. [SFZFormat](https://sfzformat.com/): Provides an overview and reference for the SFZ file format.
+5. [Wave Alchemy](https://www.wavealchemy.co.uk/): Makers of award-winning virtual instruments, samples and FX.
