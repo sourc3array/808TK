@@ -20,11 +20,11 @@
                </keyboard>
         </ui>
 
-        <groups attack="0.000" decay="25" sustain="1.0" release="0.430" volume="-3dB" >
+        <groups attack="0.002" decay="25" sustain="0.52" release="0.007" volume="0.92">
 
                 <!-- DRUMS -->
 
-                <group>
+                <group ampVelTrack="0.87" volume="1.00">
 
                         <!-- 01 :: KICK A (SUB) -->
                         <sample loNote="35" rootNote="35" hiNote="35" path="Samples/wa_808tape_kick_01_clean.wav" />
@@ -42,8 +42,8 @@
 
                 <!-- SNARES -->
 
-                <group>
-
+                <group ampVelTrack="0.87" volume="1.00">
+                        
                         <!-- 05 :: SNARE A -->
                         <sample loNote="38" rootNote="38" hiNote="38" path="Samples/wa_808tape_snare_01_clean.wav" />
 
@@ -59,6 +59,8 @@
                 </group>
 
                 <!-- HI-HATS -->
+                
+                <group ampVelTrack="0.87" volume="1.00">
 
                         <!-- 09 :: CLOSED Hi-HAT -->
                         <sample loNote="42" rootNote="42" hiNote="42" path="Samples/wa_808tape_closedhat_01_clean.wav" />
@@ -71,22 +73,32 @@
 
                         <!-- 12 :: OPEN Hi-HAT -->
                         <sample loNote="47" rootNote="47" hiNote="47" path="Samples/wa_808tape_openhat_03_clean.wav" />
+                        
+                </group>
 
                 <!-- CYMBALS -->
+
+                <group ampVelTrack="0.87" volume="1.00">
 
                         <!-- 13 :: CRASH -->
                         <sample loNote="48" rootNote="48" hiNote="48" path="Samples/wa_808tape_crash_04_clean.wav" />
 
                         <!-- 14 :: CRASH) (ALT) -->
                         <sample loNote="50" rootNote="50" hiNote="50" path="Samples/wa_808tape_crash_01_clean.wav" />
+                
+                </group>
 
                 <!-- PERCUSSION -->
+                
+                <group ampVelTrack="0.87" volume="1.00">
 
                         <!-- 15 :: CLAVE -->
                         <sample loNote="46" rootNote="46" hiNote="46" path="Samples/wa_808tape_clave_02_clean.wav" />
 
                         <!-- 16 :: MARACAS (FX) -->
                         <sample loNote="49" rootNote="49" hiNote="49" path="Samples/wa_808tape_maracas_04_clean.wav" />
+                        
+                </group>
 
         </groups>
 
