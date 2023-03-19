@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.0.0">
+
+        <ui width="812" height="375" coverArt="Images/808TK_bkgnd_1624x750.png" bgImage="Images/808TK_bkgnd_1624x750.png" bgColor="#1B1C1E">
+                <tab name="main"></tab>
+                <keyboard>
+                        <color loNote="35" hiNote="36" color="FF2C365E" />
+                        <color loNote="41" hiNote="43" color="FF2C365E" />
+                </keyboard>
+        </ui>
+
+        <groups attack="0.000" decay="25" sustain="1.0" release="0.430" volume="-3dB" >
+
+                <!-- DRUMS -->
+
+                <group>
+
+                        <!-- 01 :: KICK A (SUB) -->
+                        <sample loNote="35" rootNote="35" hiNote="35" path="Samples/wa_808tape_kick_01_clean.wav" />
+
+                        <!-- 02 :: KICK B -->
+                        <sample loNote="36" rootNote="36" hiNote="36" path="Samples/wa_808tape_kick_23_clean.wav" />
+
+                        <!-- 03 :: TOM A (LOW) -->
+                        <sample loNote="41" rootNote="41" hiNote="41" path="Samples/wa_808tape_lotom_02_clean.wav" />
+
+                        <!-- 04 :: TOM B (HIGH) -->
+                        <sample loNote="43" rootNote="43" hiNote="43" path="Samples/wa_808tape_hitom_01_clean.wav" />
+
+                </group>
+
+                <!-- SNARES -->
+
+                <!-- HI-HATS -->
+
+                <!-- CYMBALS -->
+
+                <!-- PERCUSSION -->
+
+        </groups>
+
+<!--
+        <midi>
+                <!-- MIDI CC 1 :: 4th knob (cutoff) -->
+                <cc number="1">
+                        <binding level="ui" type="control" parameter="VALUE" position="3" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                </cc>
+        </midi>  
+-->
+
+</DecentSampler>
