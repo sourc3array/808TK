@@ -128,23 +128,47 @@
 
                 <!-- 09 :: CLOSED Hi-HAT -->
 
-                        <sample loNote="42" rootNote="42" hiNote="42"
+                        <sample loNote="42" rootNote="42" hiNote="42" loVel="0" hivel="63"
                         path="Samples/wa_808tape_closedhat_01_clean.wav" />
+
+                        <sample loNote="42" rootNote="42" hiNote="42" loVel="64" hivel="103"
+                        path="Samples/wa_808tape_closedhat_01_sat.wav" />
+
+                        <sample loNote="42" rootNote="42" hiNote="42" loVel="104" hivel="127"
+                        path="Samples/wa_808tape_closedhat_01_sat2.wav" />
 
                 <!-- 10 :: CLOSED Hi-HAT (CHIK) -->
 
-                        <sample loNote="44" rootNote="44" hiNote="44"
+                        <sample loNote="44" rootNote="44" hiNote="44" loVel="0" hivel="63"
                         path="Samples/wa_808tape_closedhat_10_clean.wav" />
+
+                        <sample loNote="44" rootNote="44" hiNote="44" loVel="64" hivel="103"
+                        path="Samples/wa_808tape_closedhat_10_sat.wav" />
+
+                        <sample loNote="44" rootNote="44" hiNote="44" loVel="104" hivel="127"
+                        path="Samples/wa_808tape_closedhat_10_sat2.wav" />
 
                 <!-- 11 :: MID Hi-HAT -->
 
-                        <sample loNote="45" rootNote="45" hiNote="45"
+                        <sample loNote="45" rootNote="45" hiNote="45" loVel="0" hivel="63"
                         path="Samples/wa_808tape_openhat_01_clean.wav" />
+
+                        <sample loNote="45" rootNote="45" hiNote="45" loVel="64" hivel="103"
+                        path="Samples/wa_808tape_openhat_01_sat.wav" />
+
+                        <sample loNote="45" rootNote="45" hiNote="45" loVel="104" hivel="127"
+                        path="Samples/wa_808tape_openhat_01_sat2.wav" />
 
                 <!-- 12 :: OPEN Hi-HAT -->
 
-                        <sample loNote="47" rootNote="47" hiNote="47"
+                        <sample loNote="47" rootNote="47" hiNote="47" loVel="0" hivel="63"
                         path="Samples/wa_808tape_openhat_03_clean.wav" />
+
+                        <sample loNote="47" rootNote="47" hiNote="47" loVel="64" hivel="103"
+                        path="Samples/wa_808tape_openhat_03_sat.wav" />
+
+                        <sample loNote="47" rootNote="47" hiNote="47" loVel="104" hivel="127"
+                        path="Samples/wa_808tape_openhat_03_sat2.wav" />
 
                 </group>
 
