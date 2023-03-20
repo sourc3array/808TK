@@ -75,60 +75,108 @@
                 <!-- SNARES -->
 
                 <group ampVelTrack="0.87" volume="1.00">
-                        
-                        <!-- 05 :: SNARE A -->
-                        <sample loNote="38" rootNote="38" hiNote="38" path="Samples/wa_808tape_snare_01_clean.wav" />
 
-                        <!-- 06 :: SNARE B (ALT) -->
-                        <sample loNote="40" rootNote="40" hiNote="40" path="Samples/wa_808tape_snare_30_clean.wav" />
+                <!-- 05 :: SNARE A -->
 
-                        <!-- 07 :: ALT A (RIM) -->
-                        <sample loNote="37" rootNote="37" hiNote="37" path="Samples/wa_808tape_rim_02_clean.wav" />
+                        <sample loNote="38" rootNote="38" hiNote="38" loVel="0" hivel="63"
+                        path="Samples/wa_808tape_snare_01_clean.wav" />
 
-                        <!-- 08 :: ALT B (CLAP) -->
-                        <sample loNote="39" rootNote="39" hiNote="39" path="Samples/wa_808tape_clap_04_clean.wav" />
+                        <sample loNote="38" rootNote="38" hiNote="38" loVel="64" hivel="103"
+                        path="Samples/wa_808tape_snare_01_sat.wav" />
+
+                        <sample loNote="38" rootNote="38" hiNote="38" loVel="104" hivel="127"
+                        path="Samples/wa_808tape_snare_01_sat2.wav" />
+
+                <!-- 06 :: SNARE B (ALT) -->
+
+                        <sample loNote="40" rootNote="40" hiNote="40" loVel="0" hivel="63"
+                        path="Samples/wa_808tape_snare_30_clean.wav" />
+
+                        <sample loNote="40" rootNote="40" hiNote="40" loVel="64" hivel="103"
+                        path="Samples/wa_808tape_snare_30_sat.wav" />
+
+                        <sample loNote="40" rootNote="40" hiNote="40" loVel="104" hivel="127"
+                        path="Samples/wa_808tape_snare_30_sat2.wav" />
+
+                <!-- 07 :: ALT A (RIM) -->
+
+                        <sample loNote="37" rootNote="37" hiNote="37" loVel="0" hivel="63"
+                        path="Samples/wa_808tape_rim_02_clean.wav" />
+
+                        <sample loNote="37" rootNote="37" hiNote="37" loVel="64" hivel="103"
+                        path="Samples/wa_808tape_rim_02_sat.wav" />
+
+                        <sample loNote="37" rootNote="37" hiNote="37" loVel="104" hivel="127"
+                        path="Samples/wa_808tape_rim_02_sat2.wav" />
+
+                <!-- 08 :: ALT B (CLAP) -->
+
+                        <sample loNote="39" rootNote="39" hiNote="39" loVel="0" hivel="63"
+                        path="Samples/wa_808tape_clap_04_clean.wav" />
+
+                        <sample loNote="39" rootNote="39" hiNote="39" loVel="64" hivel="103"
+                        path="Samples/wa_808tape_clap_04_sat.wav" />
+
+                        <sample loNote="39" rootNote="39" hiNote="39" loVel="104" hivel="127"
+                        path="Samples/wa_808tape_clap_04_sat2.wav" />
 
                 </group>
 
                 <!-- HI-HATS -->
-                
+
                 <group ampVelTrack="0.87" volume="1.00">
 
-                        <!-- 09 :: CLOSED Hi-HAT -->
-                        <sample loNote="42" rootNote="42" hiNote="42" path="Samples/wa_808tape_closedhat_01_clean.wav" />
+                <!-- 09 :: CLOSED Hi-HAT -->
 
-                        <!-- 10 :: CLOSED Hi-HAT (CHIK) -->
-                        <sample loNote="44" rootNote="44" hiNote="44" path="Samples/wa_808tape_closedhat_10_clean.wav" />
+                        <sample loNote="42" rootNote="42" hiNote="42"
+                        path="Samples/wa_808tape_closedhat_01_clean.wav" />
 
-                        <!-- 11 :: MID Hi-HAT -->
-                        <sample loNote="45" rootNote="45" hiNote="45" path="Samples/wa_808tape_openhat_01_clean.wav" />
+                <!-- 10 :: CLOSED Hi-HAT (CHIK) -->
 
-                        <!-- 12 :: OPEN Hi-HAT -->
-                        <sample loNote="47" rootNote="47" hiNote="47" path="Samples/wa_808tape_openhat_03_clean.wav" />
-                        
+                        <sample loNote="44" rootNote="44" hiNote="44"
+                        path="Samples/wa_808tape_closedhat_10_clean.wav" />
+
+                <!-- 11 :: MID Hi-HAT -->
+
+                        <sample loNote="45" rootNote="45" hiNote="45"
+                        path="Samples/wa_808tape_openhat_01_clean.wav" />
+
+                <!-- 12 :: OPEN Hi-HAT -->
+
+                        <sample loNote="47" rootNote="47" hiNote="47"
+                        path="Samples/wa_808tape_openhat_03_clean.wav" />
+
                 </group>
 
                 <!-- CYMBALS -->
 
                 <group ampVelTrack="0.87" volume="1.00">
 
-                        <!-- 13 :: CRASH -->
-                        <sample loNote="48" rootNote="48" hiNote="48" path="Samples/wa_808tape_crash_04_clean.wav" />
+                <!-- 13 :: CRASH -->
 
-                        <!-- 14 :: CRASH) (ALT) -->
-                        <sample loNote="50" rootNote="50" hiNote="50" path="Samples/wa_808tape_crash_01_clean.wav" />
-                
+                        <sample loNote="48" rootNote="48" hiNote="48"
+                        path="Samples/wa_808tape_crash_04_clean.wav" />
+
+                <!-- 14 :: CRASH) (ALT) -->
+
+                        <sample loNote="50" rootNote="50" hiNote="50"
+                        path="Samples/wa_808tape_crash_01_clean.wav" />
+
                 </group>
 
                 <!-- PERCUSSION -->
-                
+
                 <group ampVelTrack="0.87" volume="1.00">
 
                         <!-- 15 :: CLAVE -->
-                        <sample loNote="46" rootNote="46" hiNote="46" path="Samples/wa_808tape_clave_02_clean.wav" />
+
+                        <sample loNote="46" rootNote="46" hiNote="46"
+                        path="Samples/wa_808tape_clave_02_clean.wav" />
 
                         <!-- 16 :: MARACAS (FX) -->
-                        <sample loNote="49" rootNote="49" hiNote="49" path="Samples/wa_808tape_maracas_04_clean.wav" />
+
+                        <sample loNote="49" rootNote="49" hiNote="49"
+                        path="Samples/wa_808tape_maracas_04_clean.wav" />
                         
                 </group>
 
