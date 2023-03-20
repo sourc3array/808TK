@@ -134,13 +134,4 @@
 
         </groups>
 
-<!--
-        <midi>
-                <!-- MIDI CC 1 :: 4th knob (cutoff) -->
-                <cc number="1">
-                        <binding level="ui" type="control" parameter="VALUE" position="3" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-                </cc>
-        </midi>  
--->
-
 </DecentSampler>
