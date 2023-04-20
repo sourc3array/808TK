@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+    Instrument: 808TK (DS)
+    Preset: 808TK | Version: 1.0.0-Alpha.1
+    Designer: Jason Krueger (sourc3array)
+    License: GNU GPL v3.0
+    GitHub: https://github.com/sourc3array/Bare_Bones_XS
+
+    Visit GEN Audio at https://genaudio.biz
+
+-->
+
+<DecentSampler minVersion="1.7.3">
+
+    <ui width="812" height="375" coverArt="UI/808TK_Cover.png" bgImage="UI/Backgrounds/808TK_UI.png" bgColor="#FAF9F6" layoutMode="relative" bgMode="top_left">
+
+        <tab name="main">
+        
+            <!-- UI 00 :: LABEL (DRUMS) -->
+      
+            <label x="142" y="36" width="70" height="48" text="DRUMS" textSize="22" hAlign="right" textColor="FF0f0706" />
+      
+            <!-- UI 01 :: KNOB A > Drums Group [Volume] -->
+            
+            <control x="94" y="36" width="48" height="48" 
+            parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_V.png" customSkinNumFrames="101" >
+
+                <binding type="amp" level="group" position="0" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                
+                <binding type="amp" level="group" position="1" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                                
+                <binding type="amp" level="group" position="2" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                
+            </control>
+            
+            <!-- UI 02 :: LABEL (SNARES) -->
+      
+            <label x="282" y="36" width="68" height="48" text="SNARES" textSize="22" hAlign="right" textColor="FF0f0706" />
+            
+            <!-- UI 03 :: KNOB B > Snares Group [Volume] -->
+            
+            <control x="234" y="36" width="48" height="48" 
+            parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_V.png" customSkinNumFrames="101" >
+
+                <binding type="amp" level="group" position="1" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                
+            </control>
+            
+            <!-- UI 04 :: LABEL (HI-HATS) -->
+
+            <label x="424" y="36" width="70" height="48" text="HI-HATS" textSize="22" hAlign="right" textColor="FF0f0706" />
+
+            <!-- UI 05 :: KNOB C > Hi-Hats Group [Volume] -->
+            
+            <control x="376" y="36" width="48" height="48" 
+            parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_V.png" customSkinNumFrames="101" >
+
+                <binding type="amp" level="group" position="2" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                
+            </control>
+            
+            <!-- UI 06 :: LABEL (CYMBALS) -->
+
+            <label x="566" y="36" width="72" height="48" text="CYMBALS" textSize="22" hAlign="right" textColor="FF0f0706" />  
+
+            <!-- UI 07 :: KNOB D > Cymbals Group [Volume] -->
+            
+            <control x="518" y="36" width="48" height="48" 
+            parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_V.png" customSkinNumFrames="101" >
+
+                <binding type="amp" level="group" position="3" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                
+            </control>
+
+            <!-- UI 08 :: LABEL (PERC FX) -->
+
+            <label x="712" y="36" width="72" height="48" text="PERC FX" textSize="22" hAlign="right" textColor="FF0f0706" />  
+
+            <!-- UI 09 :: KNOB E > Percussion FX [Volume] -->
+            
+            <control x="664" y="36" width="48" height="48" 
+            parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_V.png" customSkinNumFrames="101" >
+
+                <binding type="amp" level="group" position="4" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                
+            </control>
+
+        </tab>
+      
+        <keyboard>
+
+            <color loNote="35" hiNote="36" color="FFffc6ab" /><!-- Kick + Kick (SUB) -->
+            <color loNote="41" hiNote="41" color="FFffc6ab" /><!-- Low Tom -->
+            <color loNote="43" hiNote="43" color="FFffc6ab" /><!-- High Tom -->
+            <color loNote="38" hiNote="38" color="FFffddcd" /><!-- Snare -->
+            <color loNote="40" hiNote="40" color="FFffddcd" /><!-- Snare (ALT) -->
+            <color loNote="42" hiNote="42" color="FFfff4ee" /><!-- Close Hat -->
+            <color loNote="44" hiNote="45" color="FFffddcd" /><!-- Closed Hat (CHIK) + Mid Hat -->
+            <color loNote="47" hiNote="47" color="FFffddcd" /><!-- Ooen Hat -->
+            <color loNote="48" hiNote="48" color="FFffddcd" /><!-- Crash -->
+            <color loNote="50" hiNote="50" color="FFffddcd" /><!-- Crash (ALT) -->
+            <color loNote="46" hiNote="46" color="FF9ce1d9" /><!-- Clave -->
+            <color loNote="49" hiNote="49" color="FF9ce1d9" /><!-- Maracas (FX) -->
+
+        </keyboard>
+
+    </ui>
+
+    <groups attack="0.01" decay=".05" sustain="0.52" release="0.03" volume="0.92">
+
+        <!-- GROUP 00 :: KICK A (SUB) -->
+
+        <group ampVelTrack="0.8" release="0.23" groupTuning="-12.0">
+
+            <!-- PAD 01 :: KICK A (SUB) -->
+
+                <sample loNote="35" rootNote="35" hiNote="35" loVel="0" hivel="63" path="Samples/wa_808tape_kick_01_clean.wav" />
+
+                <sample loNote="35" rootNote="35" hiNote="35" loVel="64" hivel="103" path="Samples/wa_808tape_kick_01_sat.wav" />
+
+                <sample loNote="35" rootNote="35" hiNote="35" loVel="104" hivel="127" path="Samples/wa_808tape_kick_01_sat.wav" />
+            
+            <!-- KICK A (SUB) :: END -->
+            
+            <effects>
+
+                <!-- [G] 00 [FX] 00 :: Low-Pass Filter -->
+                <effect type="lowpass" resonance="0.3" frequency="200" />
+
+            </effects>
+            
+        </group>
+        
+        <!-- GROUP 01 :: KICK B -->
+        
+        <group ampVelTrack="0.8" release="1.99">
+
+            <!-- PAD 02 :: KICK B -->
+
+                <sample loNote="36" rootNote="36" hiNote="36" loVel="0" hivel="63" path="Samples/wa_808tape_kick_23_clean.wav" />
+
+                <sample loNote="36" rootNote="36" hiNote="36" loVel="64" hivel="103" path="Samples/wa_808tape_kick_23_sat.wav" />
+
+                <sample loNote="36" rootNote="36" hiNote="36" loVel="104" hivel="127" path="Samples/wa_808tape_kick_23_sat2.wav" />
+            
+            <!-- KICK B :: END -->
+            
+        </group>
+        
+        <!-- GROUP 02 :: TOMS GROUP -->
+        
+        <group ampVelTrack="0.8" release="0.51">
+        
+            <!-- PAD 03 :: TOM A (LO) -->
+
+                <sample loNote="41" rootNote="41" hiNote="41" loVel="0" hivel="63" pan="24" path="Samples/wa_808tape_lotom_02_clean.wav" />
+
+                <sample loNote="41" rootNote="41" hiNote="41" loVel="64" hivel="103" pan="24" path="Samples/wa_808tape_lotom_02_sat.wav" />
+
+                <sample loNote="41" rootNote="41" hiNote="41" loVel="104" hivel="127" pan="24" path="Samples/wa_808tape_lotom_02_sat2.wav" />
+            
+            <!-- TOM A (LO) :: END -->
+
+            <!-- PAD 04 :: TOM B (HI) -->
+
+                <sample loNote="43" rootNote="43" hiNote="43" loVel="0" hivel="63" pan="36" path="Samples/wa_808tape_hitom_01_clean.wav" />
+
+                <sample loNote="43" rootNote="43" hiNote="43" loVel="64" hivel="103" pan="36" path="Samples/wa_808tape_hitom_01_sat.wav" />
+
+                <sample loNote="43" rootNote="43" hiNote="43" loVel="104" hivel="127" pan="36" path="Samples/wa_808tape_hitom_01_sat2.wav" />
+            
+            <!-- TOM B (HI) :: END -->
+            
+            <effects>
+
+                <!-- [G] 02 [FX] 00 :: Low-Pass Filter -->
+                <effect type="lowpass" resonance="0.3" frequency="1200" />
+
+            </effects>
+
+        </group>
+
+        <!-- SNARES -->
+
+        <group ampVelTrack="0.9">
+
+            <!-- 05 :: SNARE A -->
+
+            <sample loNote="38" rootNote="38" hiNote="38" loVel="0" hivel="63"
+            path="Samples/wa_808tape_snare_01_clean.wav" />
+
+            <sample loNote="38" rootNote="38" hiNote="38" loVel="64" hivel="103"
+            path="Samples/wa_808tape_snare_01_sat.wav" />
+
+            <sample loNote="38" rootNote="38" hiNote="38" loVel="104" hivel="127"
+            path="Samples/wa_808tape_snare_01_sat2.wav" />
+
+            <!-- 06 :: SNARE B (ALT) -->
+
+            <sample loNote="40" rootNote="40" hiNote="40" loVel="0" hivel="63"
+            path="Samples/wa_808tape_snare_30_clean.wav" />
+
+            <sample loNote="40" rootNote="40" hiNote="40" loVel="64" hivel="103"
+            path="Samples/wa_808tape_snare_30_sat.wav" />
+
+            <sample loNote="40" rootNote="40" hiNote="40" loVel="104" hivel="127"
+            path="Samples/wa_808tape_snare_30_sat2.wav" />
+
+            <!-- 07 :: ALT A (RIM) -->
+
+            <sample loNote="37" rootNote="37" hiNote="37" loVel="0" hivel="63"
+            path="Samples/wa_808tape_rim_02_clean.wav" />
+
+            <sample loNote="37" rootNote="37" hiNote="37" loVel="64" hivel="103"
+            path="Samples/wa_808tape_rim_02_sat.wav" />
+
+            <sample loNote="37" rootNote="37" hiNote="37" loVel="104" hivel="127"
+            path="Samples/wa_808tape_rim_02_sat2.wav" />
+
+            <!-- 08 :: ALT B (CLAP) -->
+
+            <sample loNote="39" rootNote="39" hiNote="39" loVel="0" hivel="63"
+            path="Samples/wa_808tape_clap_04_clean.wav" />
+
+            <sample loNote="39" rootNote="39" hiNote="39" loVel="64" hivel="103"
+            path="Samples/wa_808tape_clap_04_sat.wav" />
+
+            <sample loNote="39" rootNote="39" hiNote="39" loVel="104" hivel="127"
+            path="Samples/wa_808tape_clap_04_sat2.wav" />
+
+        </group>
+
+        <!-- HI-HATS -->
+
+        <group ampVelTrack="0.7">
+
+            <!-- 09 :: CLOSED Hi-HAT -->
+
+            <sample loNote="42" rootNote="42" hiNote="42" loVel="0" hivel="63"
+            path="Samples/wa_808tape_closedhat_01_clean.wav" />
+
+            <sample loNote="42" rootNote="42" hiNote="42" loVel="64" hivel="103"
+            path="Samples/wa_808tape_closedhat_01_sat.wav" />
+
+            <sample loNote="42" rootNote="42" hiNote="42" loVel="104" hivel="127"
+            path="Samples/wa_808tape_closedhat_01_sat2.wav" />
+
+            <!-- 10 :: CLOSED Hi-HAT (CHIK) -->
+
+            <sample loNote="44" rootNote="44" hiNote="44" loVel="0" hivel="63"
+            path="Samples/wa_808tape_closedhat_10_clean.wav" />
+
+            <sample loNote="44" rootNote="44" hiNote="44" loVel="64" hivel="103"
+            path="Samples/wa_808tape_closedhat_10_sat.wav" />
+
+            <sample loNote="44" rootNote="44" hiNote="44" loVel="104" hivel="127"
+            path="Samples/wa_808tape_closedhat_10_sat2.wav" />
+
+            <!-- 11 :: MID Hi-HAT -->
+
+            <sample loNote="45" rootNote="45" hiNote="45" loVel="0" hivel="63"
+            path="Samples/wa_808tape_openhat_01_clean.wav" />
+
+            <sample loNote="45" rootNote="45" hiNote="45" loVel="64" hivel="103"
+            path="Samples/wa_808tape_openhat_01_sat.wav" />
+
+            <sample loNote="45" rootNote="45" hiNote="45" loVel="104" hivel="127"
+            path="Samples/wa_808tape_openhat_01_sat2.wav" />
+
+            <!-- 12 :: OPEN Hi-HAT -->
+
+            <sample loNote="47" rootNote="47" hiNote="47" loVel="0" hivel="63"
+            path="Samples/wa_808tape_openhat_03_clean.wav" />
+
+            <sample loNote="47" rootNote="47" hiNote="47" loVel="64" hivel="103"
+            path="Samples/wa_808tape_openhat_03_sat.wav" />
+
+            <sample loNote="47" rootNote="47" hiNote="47" loVel="104" hivel="127"
+            path="Samples/wa_808tape_openhat_03_sat2.wav" />
+
+        </group>
+
+        <!-- CYMBALS -->
+
+        <group ampVelTrack="0.9">
+
+            <!-- 13 :: CRASH -->
+
+            <sample loNote="48" rootNote="48" hiNote="48"
+            path="Samples/wa_808tape_crash_04_clean.wav" />
+
+            <!-- 14 :: CRASH) (ALT) -->
+
+            <sample loNote="50" rootNote="50" hiNote="50"
+            path="Samples/wa_808tape_crash_01_clean.wav" />
+
+        </group>
+
+        <!-- PERCUSSION -->
+
+        <group ampVelTrack="0.7">
+
+            <!-- 15 :: CLAVE -->
+
+            <sample loNote="46" rootNote="46" hiNote="46"
+            path="Samples/wa_808tape_clave_02_clean.wav" />
+
+            <!-- 16 :: MARACAS (FX) -->
+
+            <sample loNote="49" rootNote="49" hiNote="49"
+            path="Samples/wa_808tape_maracas_04_clean.wav" />
+                        
+        </group>
+
+    </groups>
+
+</DecentSampler>
