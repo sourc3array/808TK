@@ -3,7 +3,7 @@
 <!--
 
     Instrument: 808TK (DS)
-    Preset: 00 - Eugene | Version: 1.0.0-Alpha.1
+    Preset: 01 - Portland | Version: 1.0.0-Alpha.1
     Designer: Jason Krueger (sourc3array)
     License: GNU GPL v3.0
     GitHub: https://github.com/sourc3array/Bare_Bones_XS
@@ -20,7 +20,7 @@
         
             <!-- UI 00 :: LABEL (DRUMS) -->
       
-            <label x="142" y="36" width="70" height="48" text="DRUMS" textSize="22" hAlign="right" textColor="FF0f0706" />
+            <label x="142" y="22" width="70" height="48" text="DRUMS" textSize="22" hAlign="right" textColor="FF0f0706" />
       
             <!-- UI 01 :: KNOB A > Drums Group [Volume] -->
             
@@ -30,71 +30,75 @@
                 
                 <binding type="amp" level="group" position="1" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
                                 
-                <binding type="amp" level="group" position="2" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-                
+                <binding type="amp" level="group" position="2" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="0.86" />
+
+                <binding type="amp" level="group" position="3" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+
+                <binding type="amp" level="group" position="4" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+
             </control>
             
             <!-- UI 02 :: LABEL (SNARES) -->
       
-            <label x="282" y="36" width="68" height="48" text="SNARES" textSize="22" hAlign="right" textColor="FF0f0706" />
+            <label x="282" y="22" width="68" height="48" text="SNARES" textSize="22" hAlign="right" textColor="FF0f0706" />
             
             <!-- UI 03 :: KNOB B > Snares Group [Volume] -->
             
             <control x="234" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_V.png" customSkinNumFrames="101" >
 
-                <binding type="amp" level="group" position="3" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-                
-                <binding type="amp" level="group" position="4" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-                
                 <binding type="amp" level="group" position="5" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
                 
                 <binding type="amp" level="group" position="6" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                
+                <binding type="amp" level="group" position="7" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                
+                <binding type="amp" level="group" position="8" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
                 
             </control>
             
             <!-- UI 04 :: LABEL (HI-HATS) -->
 
-            <label x="424" y="36" width="70" height="48" text="HI-HATS" textSize="22" hAlign="right" textColor="FF0f0706" />
+            <label x="424" y="22" width="70" height="48" text="HI-HATS" textSize="22" hAlign="right" textColor="FF0f0706" />
 
             <!-- UI 05 :: KNOB C > Hi-Hats Group [Volume] -->
             
             <control x="376" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_V.png" customSkinNumFrames="101" >
 
-                <binding type="amp" level="group" position="7" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-
-                <binding type="amp" level="group" position="8" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-
                 <binding type="amp" level="group" position="9" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-                
+
                 <binding type="amp" level="group" position="10" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+
+                <binding type="amp" level="group" position="11" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                
+                <binding type="amp" level="group" position="12" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
             </control>
             
             <!-- UI 06 :: LABEL (CYMBALS) -->
 
-            <label x="566" y="36" width="72" height="48" text="CYMBALS" textSize="22" hAlign="right" textColor="FF0f0706" />  
+            <label x="566" y="22" width="72" height="48" text="CYMBALS" textSize="22" hAlign="right" textColor="FF0f0706" />  
 
             <!-- UI 07 :: KNOB D > Cymbals Group [Volume] -->
             
             <control x="518" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_V.png" customSkinNumFrames="101" >
 
-                <binding type="amp" level="group" position="11" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                <binding type="amp" level="group" position="13" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
-                <binding type="amp" level="group" position="12" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                <binding type="amp" level="group" position="14" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
             </control>
 
             <!-- UI 08 :: LABEL (PERC FX) -->
 
-            <label x="712" y="36" width="72" height="48" text="PERC FX" textSize="22" hAlign="right" textColor="FF0f0706" />  
+            <label x="712" y="22" width="72" height="48" text="PERC FX" textSize="22" hAlign="right" textColor="FF0f0706" />  
 
             <!-- UI 09 :: KNOB E > Percussion FX [Volume] -->
             
             <control x="664" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_V.png" customSkinNumFrames="101" >
 
-                <binding type="amp" level="group" position="13" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                <binding type="amp" level="group" position="15" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
-                <binding type="amp" level="group" position="14" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                <binding type="amp" level="group" position="16" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
             </control>
 
@@ -144,11 +148,11 @@
             
         </group>
         
-        <!-- GROUP 01 :: PAD 02 -->
+        <!-- GROUP 01 :: PAD 02 > Sound Layer A -->
         
         <group ampVelTrack="0.8" release="1.99">
 
-            <!-- PAD 02 :: KICK B -->
+            <!-- PAD 02 [A] :: KICK 23 -->
 
             <sample loNote="36" rootNote="36" hiNote="36" loVel="0" hivel="63" path="Samples/wa_808tape_kick_23_clean.wav" />
 
@@ -156,13 +160,27 @@
 
             <sample loNote="36" rootNote="36" hiNote="36" loVel="104" hivel="127" path="Samples/wa_808tape_kick_23_sat2.wav" />
             
-            <!-- KICK B :: END -->
+            <!-- KICK 23 :: END -->
+
+        </group>
+
+        <!-- GROUP 02 :: PAD 02 > Sound Layer B-->
+        
+        <group ampVelTrack="0.8" release="0.23" volume="86">
+
+            <!-- PAD 02 [B] :: KICK 01 -->
+
+            <sample loNote="36" rootNote="36" hiNote="36" loVel="0" hivel="82" path="Samples/wa_808tape_kick_01_sat.wav" />
+
+            <sample loNote="36" rootNote="36" hiNote="36" loVel="83" hivel="127" path="Samples/wa_808tape_kick_01_sat2.wav" />
+
+            <!-- KICK 23 :: END -->
             
         </group>
         
-        <!-- GROUP 02 :: TOMS GROUP -->
+        <!-- GROUP 03 :: PAD 03 -->
         
-        <group ampVelTrack="0.8" release="0.51">
+        <group ampVelTrack="0.8" release="0.60">
         
             <!-- PAD 03 :: TOM A (LO) -->
 
@@ -173,6 +191,12 @@
             <sample loNote="41" rootNote="41" hiNote="41" loVel="104" hivel="127" pan="24" path="Samples/wa_808tape_lotom_02_sat2.wav" />
             
             <!-- TOM A (LO) :: END -->
+            
+        </group>
+        
+        <!-- GROUP 04 :: PAD 04 -->
+        
+        <group ampVelTrack="0.8" release="0.43">
 
             <!-- PAD 04 :: TOM B (HI) -->
 
@@ -193,7 +217,7 @@
 
         </group>
 
-        <!-- GROUP 03 :: PAD 05 -->
+        <!-- GROUP 05 :: PAD 05 -->
         
         <group ampVelTrack="0.9" release="0.22">
 
@@ -209,7 +233,7 @@
             
         </group>
         
-        <!-- GROUP 04 :: PAD 06 -->
+        <!-- GROUP 06 :: PAD 06 -->
         
         <group ampVelTrack="0.9" release="0.23">
 
@@ -225,7 +249,7 @@
             
         </group>
         
-        <!-- GROUP 05 :: PAD 07 -->
+        <!-- GROUP 07 :: PAD 07 -->
         
         <group ampVelTrack="0.8" release="0.05">
 
@@ -241,7 +265,7 @@
             
         </group>
         
-        <!-- GROUP 06 :: PAD 08 -->
+        <!-- GROUP 08 :: PAD 08 -->
         
         <group ampVelTrack="0.8" release="0.23">
 
@@ -257,7 +281,7 @@
             
         </group>
 
-        <!-- GROUP 07 :: PAD 09 -->
+        <!-- GROUP 09 :: PAD 09 -->
         
         <group ampVelTrack="0.7" release="0.14">
 
@@ -273,7 +297,7 @@
 
         </group>
 
-        <!-- GROUP 08:: PAD 10 -->
+        <!-- GROUP 10 :: PAD 10 -->
         
         <group ampVelTrack="0.7" release="0.14">
 
@@ -289,7 +313,7 @@
 
         </group>
 
-        <!-- GROUP 09:: PAD 11 -->
+        <!-- GROUP 11 :: PAD 11 -->
         
         <group ampVelTrack="0.7" release="0.17">
 
@@ -305,7 +329,7 @@
 
         </group>
 
-        <!-- GROUP 10:: PAD 12 -->
+        <!-- GROUP 12 :: PAD 12 -->
         
         <group ampVelTrack="0.7" release="0.86">
 
@@ -321,7 +345,7 @@
 
         </group>
 
-        <!-- GROUP 11:: PAD 13 -->
+        <!-- GROUP 13 :: PAD 13 -->
         
         <group ampVelTrack="0.9" release="3.85">
 
@@ -337,7 +361,7 @@
 
         </group>
 
-        <!-- GROUP 12:: PAD 14 -->
+        <!-- GROUP 14 :: PAD 14 -->
         
         <group ampVelTrack="0.9" release="1.37">        
 
@@ -353,7 +377,7 @@
 
         </group>
 
-        <!-- GROUP 13:: PAD 15 -->
+        <!-- GROUP 15 :: PAD 15 -->
 
         <group ampVelTrack="0.7" release="0.05"> 
 
@@ -369,7 +393,7 @@
 
         </group>
 
-        <!-- GROUP 14:: PAD 16 -->
+        <!-- GROUP 16 :: PAD 16 -->
 
         <group ampVelTrack="0.7" release="0.04"> 
 
