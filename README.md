@@ -1,4 +1,4 @@
-![UI screenshot of 00-Eugene preset from the 808TK for Decent Sampler ]( /Docs/Images/Preset_UI_01_Portland.png )
+![UI screenshot of the '01-Portland' kit preset from the 808TK for Decent Sampler]( /Docs/Images/Preset_UI_01_Portland.png )
 
 # 808TK (DS)
 
