@@ -28,7 +28,7 @@
       
             <!-- UI 02 :: KNOB A1 > Drums Group > Sound Group A [Volume] -->
             
-            <control x="94" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_V.png" customSkinNumFrames="101" >
+            <control x="94" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
 
                 <binding type="amp" level="group" position="0" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
@@ -44,7 +44,7 @@
 
             <!-- UI 03 :: KNOB A2 > Drums Group > Sound Group B [Volume] -->
             
-            <control x="160" y="55" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_T.png" customSkinNumFrames="101" >
+            <control x="160" y="55" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_T.png" customSkinNumFrames="101" >
                 
                 <binding type="amp" level="group" position="1" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="0.33" />
                                 
@@ -68,7 +68,7 @@
 
             <!-- UI 06 :: KNOB B1 > Snares A [Volume] -->
             
-            <control x="234" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_V.png" customSkinNumFrames="101" >
+            <control x="234" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
 
                 <binding type="amp" level="group" position="8" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
                                 
@@ -84,7 +84,7 @@
 
             <!-- UI 07 :: KNOB B2 > Snares B [Volume] -->
 
-            <control x="304" y="55" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_T.png" customSkinNumFrames="101" >
+            <control x="304" y="55" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_T.png" customSkinNumFrames="101" >
                 
                 <binding type="amp" level="group" position="9" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
                                 
@@ -104,7 +104,7 @@
 
             <!-- UI 10 :: KNOB C > Hi-Hats Group [Volume] -->
             
-            <control x="376" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_V.png" customSkinNumFrames="101" >
+            <control x="376" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
 
                 <binding type="amp" level="group" position="14" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
@@ -125,14 +125,27 @@
             <button x="449" y="61" width="36" height="36" style="image" value="0">
             
                 <state name="HATS_TIGHT" mainImage="UI/Buttons/Switch_XS_A.png">
+
                     <binding type="amp" level="group" position="17" parameter="ENABLED" translation="fixed_value" translationValue="true" />
+
                     <binding type="amp" level="group" position="18" parameter="ENABLED" translation="fixed_value" translationValue="false" />
+
+                    <binding type="amp" level="group" position="19" parameter="ENV_RELEASE" translation="fixed_value" translationValue="0.36" />
+
                     <binding type="control" level="ui" position="9" parameter="TEXT" translation="fixed_value" translationValue="TIGHT" />
+
                 </state>
+
                 <state name="HATS_LOOSE" mainImage="UI/Buttons/Switch_XS_B.png">
+
                     <binding type="amp" level="group" position="17" parameter="ENABLED" translation="fixed_value" translationValue="false" />
+
                     <binding type="amp" level="group" position="18" parameter="ENABLED" translation="fixed_value" translationValue="true" />
+
+                    <binding type="amp" level="group" position="19" parameter="ENV_RELEASE" translation="fixed_value" translationValue="1.10" />
+
                     <binding type="control" level="ui" position="9" parameter="TEXT" translation="fixed_value" translationValue="LOOSE" />
+
                  </state>
                  
             </button>
@@ -147,7 +160,7 @@
  
             <!-- UI 14 :: KNOB D > Cymbals Group [Volume] -->
             
-            <control x="518" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_V.png" customSkinNumFrames="101" >
+            <control x="518" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
 
                 <binding type="amp" level="group" position="20" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
@@ -191,7 +204,7 @@
 
             <!-- UI 18 :: KNOB E1 > Percussion FX (A) [Volume] -->
             
-            <control x="664" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_V.png" customSkinNumFrames="101" >
+            <control x="664" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
 
                 <binding type="amp" level="group" position="22" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
@@ -203,7 +216,7 @@
 
             <!-- UI 19 :: KNOB E2 > Percussion FX (B) [Volume] -->
             
-            <control x="734" y="55" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Knobs/Knob_808_T.png" customSkinNumFrames="101" >
+            <control x="734" y="55" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_T.png" customSkinNumFrames="101" >
 
                 <binding type="amp" level="group" position="23" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
@@ -587,7 +600,7 @@
 
         <!-- GROUP 19 :: PAD 12 -->
         
-        <group ampVelTrack="0.7" release="1.10">
+        <group ampVelTrack="0.7">
 
             <!-- PAD 12 :: OPEN HAT -->
 
