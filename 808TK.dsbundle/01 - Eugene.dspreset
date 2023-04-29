@@ -138,6 +138,9 @@
                 <!-- [G] 00 [FX] 00 :: Low-Pass Filter -->
                 <effect type="lowpass" resonance="0.33" frequency="200" />
 
+                <!-- [G] 00 [FX] 01 :: Gain -->
+                <effect type="gain" level="2.0" />
+
             </effects>
             
         </group>
