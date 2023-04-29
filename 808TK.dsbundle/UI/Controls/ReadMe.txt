@@ -1,18 +1,34 @@
-Knobs included in this package are public domain under a Creative Commons CC0 license. You are free to distribute, remix, adapt and build upon these knobs in any medium or format, with no conditions.
+# What Are Controls?
 
---
+User **controls** are the graphic knob files used by the Decent Sampler engine to create the user interface (UI) controls for the **808TK** instrument presets. 
 
-For more knobs, visit KNOBGALLERY:
+ - The Decent Sampler platform supports custom JPEG or PNG control graphics in [KnobMan]( https://www.g200kg.com/knobman/ ) format.
 
-https://www.g200kg.com/en/webknobman/gallery.php
+***
 
---
+# Using Controls
 
-For more information on public domain licensing, visit Creative Commons:
+The **808TK** includes two (2) knob designs which are used as UI controls for the instrument presets.
 
-https://creativecommons.org/
+To use custom knob designs, simply add the image file(s) to the 'Controls' folder and update your instrument preset file(s) accordingly using a text editor.
 
+***
 
+# Credits & Attribution
 
+Knob designs included with the **808TK** are Public Domain and/or used under Creative Commons license.
 
+***
 
+### Knob Files by Anonymous:
+
+ - [Knob_808_T.png]( https://www.g200kg.com/en/webknobman/gallery.php?m=p&p=1771 )
+ - [Knob_808_V.png]( https://www.g200kg.com/en/webknobman/gallery.php?m=p&p=1770 )
+
+Used under *Creative Commons 0* license.
+
+***
+
+## Public Domain & Creative Commons Licensing
+
+- [Creative Commons 0]( http://creativecommons.org/publicdomain/zero/1.0/ )
