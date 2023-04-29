@@ -3,10 +3,10 @@
 <!--
 
     Instrument: 808TK (DS)
-    Preset: 01 - Portland | Version: 1.0.0-Alpha.1
+    Preset: 02 - Portland | Version: 1.0.0-Alpha.1
     Designer: Jason Krueger (sourc3array)
     License: GNU GPL v3.0
-    GitHub: https://github.com/sourc3array/Bare_Bones_XS
+    GitHub: https://github.com/sourc3array/808TK
 
     Visit GEN Audio at https://genaudio.biz
 
@@ -14,7 +14,7 @@
 
 <DecentSampler minVersion="1.7.3">
 
-    <ui width="812" height="375" coverArt="UI/808TK_Cover.png" bgImage="UI/Backgrounds/808TK_UI.png" bgColor="#FAF9F6" layoutMode="relative" bgMode="top_left">
+    <ui width="812" height="375" coverArt="UI/808TK_Cover.png" bgImage="UI/Panels/Panel_808TK.png" bgColor="#FAF9F6" layoutMode="relative" bgMode="top_left">
 
         <tab name="main">
         

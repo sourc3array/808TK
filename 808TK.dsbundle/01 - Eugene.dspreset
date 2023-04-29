@@ -3,10 +3,10 @@
 <!--
 
     Instrument: 808TK (DS)
-    Preset: 00 - Eugene | Version: 1.0.0-Alpha.1
+    Preset: 01 - Eugene | Version: 1.0.0-Alpha.1
     Designer: Jason Krueger (sourc3array)
     License: GNU GPL v3.0
-    GitHub: https://github.com/sourc3array/Bare_Bones_XS
+    GitHub: https://github.com/sourc3array/808TK
 
     Visit GEN Audio at https://genaudio.biz
 
@@ -14,7 +14,7 @@
 
 <DecentSampler minVersion="1.7.3">
 
-    <ui width="812" height="375" coverArt="UI/808TK_Cover.png" bgImage="UI/Backgrounds/808TK_UI.png" bgColor="#FAF9F6" layoutMode="relative" bgMode="top_left">
+    <ui width="812" height="375" coverArt="UI/808TK_Cover.png" bgImage="UI/Panels/Panel_808TK.png" bgColor="#FAF9F6" layoutMode="relative" bgMode="top_left">
 
         <tab name="main">
         
@@ -40,7 +40,7 @@
             
             <!-- UI 03 :: KNOB B > Snares Group [Volume] -->
             
-            <control x="234" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
+            <control x="234" y="36" width="48" height="48" parameterName="SNARES_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
 
                 <binding type="amp" level="group" position="3" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
                 
@@ -58,7 +58,7 @@
 
             <!-- UI 05 :: KNOB C > Hi-Hats Group [Volume] -->
             
-            <control x="376" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
+            <control x="376" y="36" width="48" height="48" parameterName="HI_HATS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
 
                 <binding type="amp" level="group" position="7" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
@@ -76,7 +76,7 @@
 
             <!-- UI 07 :: KNOB D > Cymbals Group [Volume] -->
             
-            <control x="518" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
+            <control x="518" y="36" width="48" height="48" parameterName="CYM_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
 
                 <binding type="amp" level="group" position="11" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
@@ -90,7 +90,7 @@
 
             <!-- UI 09 :: KNOB E > Percussion FX [Volume] -->
             
-            <control x="664" y="36" width="48" height="48" parameterName="DRUMS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
+            <control x="664" y="36" width="48" height="48" parameterName="PERC_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
 
                 <binding type="amp" level="group" position="13" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
@@ -119,17 +119,15 @@
 
     </ui>
 
-    <groups attack="0.01" decay=".05" sustain="0.52" release="0.03" volume="0.92">
+    <groups attack="0.01" decay="0.05" sustain="0.52">
 
         <!-- GROUP 00 :: PAD 01 -->
 
-        <group ampVelTrack="0.8" release="0.23" groupTuning="-12.0">
+        <group ampVelTrack="0.80" release="0.23" groupTuning="-12.0">
 
             <!-- PAD 01 :: KICK A (SUB) -->
 
-            <sample loNote="35" rootNote="35" hiNote="35" loVel="0" hivel="20" path="Samples/wa_808tape_kick_01_clean.wav" />
-
-            <sample loNote="35" rootNote="35" hiNote="35" lovel="21" hivel="64" path="Samples/wa_808tape_kick_01_sat.wav" />
+            <sample loNote="35" rootNote="35" hiNote="35" loVel="0" hivel="64" path="Samples/wa_808tape_kick_01_clean.wav" />
 
             <sample loNote="35" rootNote="35" hiNote="35" loVel="65" hivel="127" path="Samples/wa_808tape_kick_01_sat.wav" />
             
@@ -138,7 +136,7 @@
             <effects>
 
                 <!-- [G] 00 [FX] 00 :: Low-Pass Filter -->
-                <effect type="lowpass" resonance="0.3" frequency="200" />
+                <effect type="lowpass" resonance="0.33" frequency="200" />
 
             </effects>
             
@@ -146,7 +144,7 @@
         
         <!-- GROUP 01 :: PAD 02 -->
         
-        <group ampVelTrack="0.8" release="1.99">
+        <group ampVelTrack="0.80" release="1.99">
 
             <!-- PAD 02 :: KICK B -->
 
@@ -162,7 +160,7 @@
         
         <!-- GROUP 02 :: TOMS GROUP -->
         
-        <group ampVelTrack="0.8" release="0.51">
+        <group ampVelTrack="0.80" release="0.51">
         
             <!-- PAD 03 :: TOM A (LO) -->
 
@@ -187,7 +185,7 @@
             <effects>
 
                 <!-- [G] 02 [FX] 00 :: Low-Pass Filter -->
-                <effect type="lowpass" resonance="0.3" frequency="1200" />
+                <effect type="lowpass" resonance="0.33" frequency="1200" />
 
             </effects>
 
@@ -195,7 +193,7 @@
 
         <!-- GROUP 03 :: PAD 05 -->
         
-        <group ampVelTrack="0.9" release="0.22">
+        <group ampVelTrack="0.90" release="0.22">
 
             <!-- PAD 05 :: SNARE A -->
 
@@ -211,7 +209,7 @@
         
         <!-- GROUP 04 :: PAD 06 -->
         
-        <group ampVelTrack="0.9" release="0.23">
+        <group ampVelTrack="0.90" release="0.23">
 
             <!-- PAD 06 :: SNARE B (ALT) -->
 
@@ -227,7 +225,7 @@
         
         <!-- GROUP 05 :: PAD 07 -->
         
-        <group ampVelTrack="0.8" release="0.05">
+        <group ampVelTrack="0.80" release="0.05">
 
             <!-- PAD 07 :: ALT A (RIM) -->
 
@@ -243,7 +241,7 @@
         
         <!-- GROUP 06 :: PAD 08 -->
         
-        <group ampVelTrack="0.8" release="0.23">
+        <group ampVelTrack="0.80" release="0.23">
 
             <!-- PAD 08 :: ALT B (CLAP) -->
 
@@ -259,7 +257,7 @@
 
         <!-- GROUP 07 :: PAD 09 -->
         
-        <group ampVelTrack="0.7" release="0.14">
+        <group ampVelTrack="0.70" release="0.14">
 
             <!-- PAD 09 :: CLOSED HAT -->
 
@@ -275,7 +273,7 @@
 
         <!-- GROUP 08:: PAD 10 -->
         
-        <group ampVelTrack="0.7" release="0.14">
+        <group ampVelTrack="0.70" release="0.14">
 
             <!-- PAD 10 :: CLOSED HAT (CHIK) -->
 
@@ -291,7 +289,7 @@
 
         <!-- GROUP 09:: PAD 11 -->
         
-        <group ampVelTrack="0.7" release="0.17">
+        <group ampVelTrack="0.70" release="0.17">
 
             <!-- PAD 11 :: MID HAT -->
 
@@ -307,7 +305,7 @@
 
         <!-- GROUP 10:: PAD 12 -->
         
-        <group ampVelTrack="0.7" release="0.86">
+        <group ampVelTrack="0.70" release="0.86">
 
             <!-- PAD 12 :: OPEN HAT -->
 
@@ -323,7 +321,7 @@
 
         <!-- GROUP 11:: PAD 13 -->
         
-        <group ampVelTrack="0.9" release="3.85">
+        <group ampVelTrack="0.90" release="3.85">
 
             <!-- PAD 13 :: CRASH -->
 
@@ -339,9 +337,9 @@
 
         <!-- GROUP 12:: PAD 14 -->
         
-        <group ampVelTrack="0.9" release="1.37">        
+        <group ampVelTrack="0.90" release="1.37">        
 
-            <!-- PAD 14 :: CRASH) (ALT) -->
+            <!-- PAD 14 :: CRASH (ALT) -->
 
             <sample loNote="50" rootNote="50" hiNote="50" loVel="0" hivel="20" path="Samples/wa_808tape_crash_01_clean.wav" />
 
@@ -355,25 +353,9 @@
 
         <!-- GROUP 13:: PAD 15 -->
 
-        <group ampVelTrack="0.7" release="0.05"> 
+        <group ampVelTrack="0.70" release="0.04"> 
 
-            <!-- PAD 15 :: CLAVE -->
-
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="0" hivel="20" path="Samples/wa_808tape_clave_02_clean.wav" />
-
-            <sample loNote="46" rootNote="46" hiNote="46" lovel="21" hivel="64" path="Samples/wa_808tape_clave_02_sat.wav" />
-
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="65" hivel="127" path="Samples/wa_808tape_clave_02_sat2.wav" />
-
-            <!-- CLAVE :: END -->
-
-        </group>
-
-        <!-- GROUP 14:: PAD 16 -->
-
-        <group ampVelTrack="0.7" release="0.04"> 
-
-            <!-- PAD 16 :: MARACAS (FX) -->
+            <!-- PAD 15 :: MARACAS (FX) -->
 
             <sample loNote="49" rootNote="49" hiNote="49" loVel="0" hivel="20" path="Samples/wa_808tape_maracas_04_clean.wav" />
 
@@ -382,6 +364,22 @@
             <sample loNote="49" rootNote="49" hiNote="49" loVel="0" hivel="20" path="Samples/wa_808tape_maracas_04_sat2.wav" />
 
             <!-- MARACAS (FX) :: END -->
+
+        </group>
+
+        <!-- GROUP 14:: PAD 16 -->
+
+        <group ampVelTrack="0.70" release="0.05"> 
+
+            <!-- PAD 16 :: CLAVE -->
+
+            <sample loNote="46" rootNote="46" hiNote="46" loVel="0" hivel="20" path="Samples/wa_808tape_clave_02_clean.wav" />
+
+            <sample loNote="46" rootNote="46" hiNote="46" lovel="21" hivel="64" path="Samples/wa_808tape_clave_02_sat.wav" />
+
+            <sample loNote="46" rootNote="46" hiNote="46" loVel="65" hivel="127" path="Samples/wa_808tape_clave_02_sat2.wav" />
+
+            <!-- CLAVE :: END -->
                         
         </group>
 
