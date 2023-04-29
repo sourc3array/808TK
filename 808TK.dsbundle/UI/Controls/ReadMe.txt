@@ -22,8 +22,8 @@ Knob designs included with the **808TK** are Public Domain and/or used under Cre
 
 ### Knob Files by Anonymous:
 
- - [Knob_808_T.png]( https://www.g200kg.com/en/webknobman/gallery.php?m=p&p=1771 )
- - [Knob_808_V.png]( https://www.g200kg.com/en/webknobman/gallery.php?m=p&p=1770 )
+ - [808_tune.knob]( https://www.g200kg.com/en/webknobman/gallery.php?m=p&p=1771 )
+ - [808_Voulme_Knob.knob]( https://www.g200kg.com/en/webknobman/gallery.php?m=p&p=1770 )
 
 Used under *Creative Commons 0* license.
 
