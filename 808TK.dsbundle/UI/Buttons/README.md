@@ -2,6 +2,8 @@
 
 Buttons are image files used by the Decent Sampler engine to create the user interface (UI) controls for some of the **808TK** kit presets.
 
+ - The Decent Sampler platform supports custom button graphics in JPEG or PNG format.
+
 ***
 
 # USING BUTTONS
