@@ -1,24 +1,29 @@
-# WHAT ARE BUTTONS?
+# What Are Buttons?
 
-Buttons are image files used by the Decent Sampler engine to create the user interface (UI) controls for some of the **808TK** kit presets.
-
- - The Decent Sampler platform supports custom button graphics in JPEG or PNG format.
+Buttons are image files used by the Decent Sampler engine to create user interface (UI) controls for the **808TK** kit presets.
 
 ***
 
-# USING BUTTONS
+# Included Buttons
 
-The **808TK** includes one (1) set of original switch designs which are used in the UI of the 'Portland' kit preset to provide switching functionality for the cymbal effects.
-
-To use custom images as buttons, simply add the files to the 'Buttons' folder and update your instument preset file(s) accordingly using a text editor.
+The **808TK** includes one (1) set of original switch designs which are used in the UI of the *Portland* kit preset to provide switching functionality for the cymbal effects.
 
 ***
 
-# CREDITS & ATTRIBUTION
+# Using Custom Buttons
+
+To use custom images as buttons, simply add the files to the *Buttons* folder and update your instument preset file(s) accordingly using a text editor.
+
+ - The Decent Sampler platform supports custom button images in JPEG or PNG format.
+ - Buttons can be customized using an image editor.
+
+***
+
+# Credits & Attribution
 
 Buttons included with the **808TK** virtual drum kit for Decent Sampler are derivative works licensed under GNU General Public License v3.0.
 
-© Copyright 2023 by Jason Krueger (sourc3array@genaudio.biz).
+© Copyright 2023 by Jason Krueger (sourc3array@genaudio.biz)
 
 
 ### Original Images by az:
@@ -30,8 +35,6 @@ Buttons included with the **808TK** virtual drum kit for Decent Sampler are deri
 ***
 
 # GNU GPL & Creative Commons Licensing
-
-For more information, please visit:
 
 - [GNU General Public License v3.0]( https://www.gnu.org/licenses/gpl-3.0.en.html )
 

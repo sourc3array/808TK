@@ -1,16 +1,20 @@
 # What Are Controls?
 
-User **controls** are the graphic knob files used by the Decent Sampler engine to create the user interface (UI) controls for the **808TK** instrument presets. 
-
- - The Decent Sampler platform supports custom JPEG or PNG control graphics in [KnobMan]( https://www.g200kg.com/knobman/ ) format.
+User **controls** are the graphic knob files used by the Decent Sampler engine to create user interface (UI) controls for the **808TK** kit presets. 
 
 ***
 
-# Using Controls
+# Included Knob Controls
 
-The **808TK** includes two (2) knob designs which are used as UI controls for the instrument presets.
+The **808TK** includes two (2) knob designs which are used extensively as UI controls for the *Eugene* and *Portland* kit presets.
 
-To use custom knob designs, simply add the image file(s) to the 'Controls' folder and update your instrument preset file(s) accordingly using a text editor.
+***
+
+# Using Custom Knobs
+
+To use custom knob designs, simply add the image file(s) to the *Controls* folder and update your instrument preset file(s) accordingly using a text editor.
+
+ - The Decent Sampler platform supports custom JPEG or PNG control graphics in [KnobMan]( https://www.g200kg.com/knobman/ ) format.
 
 ***
 

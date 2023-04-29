@@ -1,6 +1,6 @@
 # What Are Panels?
 
-Panels are image files used by the Decent Sampler engine to create the user interface (UI) backgrounds for each of the **808TK** instrument presets.
+Panels are image files used by the Decent Sampler engine to create user interface (UI) backgrounds for each of the **808TK** kit presets.
 
 ***
 
@@ -12,7 +12,7 @@ The **808TK** includes one (1) original panel design for the *Eugene* and *Portl
 
 # Using Custom Panels
 
-To use custom panels, simply add the image file(s) to the 'Panels' folder and update your instument preset file(s) accordingly using a text editor.
+To use custom panels, simply add the image file(s) to the *Panels* folder and update your instument preset file(s) accordingly using a text editor.
 
  - The Decent Sampler platform supports custom background images in JPEG or PNG format.
  - Panels can be customized using an image editor.
@@ -24,7 +24,7 @@ To use custom panels, simply add the image file(s) to the 'Panels' folder and up
 
 Panel designs included with the **808TK** are original works licensed under *GNU General Public License v3.0*.
 
-© Copyright 2023 by Jason Krueger (sourc3array@genaudio.biz).
+© Copyright 2023 by Jason Krueger (sourc3array@genaudio.biz)
 
 ***
 
