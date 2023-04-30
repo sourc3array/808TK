@@ -23,7 +23,7 @@ The **808TK** is a virtual drum kit instrument for [Decent Sampler]( https://www
 
 ## Requirements
 
-The **808TK** drum kit is built for use with Decent Sampler, a free sampling plugin and stand-alone player for creating and playing virtual instruments in the Decent Sampler format. Decent Sampler *must* be installed to utilize the **808TK** kit presets. Decent Sampler is available in the following formats:
+The **808TK** drum kit is built for use with Decent Sampler, a free sampling plugin and stand-alone player for creating and playing virtual instruments in the Decent Sampler format. Decent Sampler *must* be installed to utilize the **808TK** drum kit presets. Decent Sampler is available in the following formats:
 
  - **Windows** (32-bit/64-bit): VST, VST3, AAX, Standalone
  - **Mac** (Intel & M1): VST, VST3, AU, AAX, Standalone
@@ -44,13 +44,13 @@ The **808TK** is compatible with Decent Sampler 1.7.3 and above.
 
     https://github.com/sourc3array/808TK
 
-2.  Extract the ZIP file archive and move the '808TK.dsbundle' folder into your instruments folder for Decent Sampler.
+2.  Extract the ZIP file archive and move the *808TK.dsbundle* folder into your instruments folder for Decent Sampler.
 
 3.  Download the free *808 Tape* sample library from Wave Alchemy:
 
     https://www.wavealchemy.co.uk/product/808-tape/
 
-4.  Open the '808TK.dsbundle' folder and populate the empty *Samples* folder with the sample files located in the *wa_808_tape* folder from Wave Alchemy.
+4.  Open the *808TK.dsbundle* folder and populate the empty *Samples* folder with the sample files located in the *wa_808_tape* folder from Wave Alchemy.
 
 5.  Load the **808TK** drum kit instrument using the file browser in the Decent Sampler plug-in or standalone player.
 
