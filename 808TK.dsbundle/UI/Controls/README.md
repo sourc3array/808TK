@@ -1,6 +1,6 @@
 # What Are Controls?
 
-User **controls** are the graphic knob files used by the Decent Sampler engine to create user interface (UI) controls for the **808TK** kit presets. 
+User **controls** are the graphic knob files used by the Decent Sampler engine to create user interface (UI) controls for the **808TK** drum kit presets. 
 
 ***
 
@@ -21,8 +21,6 @@ To use custom knob designs, simply add the image file(s) to the *Controls* folde
 # Credits & Attribution
 
 Knob designs included with the **808TK** are Public Domain and/or used under Creative Commons license.
-
-***
 
 ### Knob Files by Anonymous:
 
