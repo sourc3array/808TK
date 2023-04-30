@@ -1,6 +1,6 @@
 # What Are Panels?
 
-Panels are image files used by the Decent Sampler engine to create user interface (UI) backgrounds for each of the **808TK** kit presets.
+Panels are image files used by the Decent Sampler engine to create user interface (UI) backgrounds for each of the **808TK** drum kit presets.
 
 ***
 
