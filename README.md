@@ -42,7 +42,7 @@ The **808TK** is compatible with Decent Sampler 1.7.3 and above.
 
 1.  Download the **808TK** drum kit for Decent Sampler:
 
-    https://github.com/sourc3array/Bare_Bones_XS
+    https://github.com/sourc3array/808TK
 
 2.  Extract the ZIP file archive and move the '808TK.dsbundle' folder into your instruments folder for Decent Sampler.
 
