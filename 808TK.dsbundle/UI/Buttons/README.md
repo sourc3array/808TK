@@ -1,6 +1,6 @@
 # What Are Buttons?
 
-Buttons are image files used by the Decent Sampler engine to create user interface (UI) controls for the **808TK** kit presets.
+Buttons are image files used by the Decent Sampler engine to create user interface (UI) controls for the **808TK** drum kit presets.
 
 ***
 
