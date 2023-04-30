@@ -1,4 +1,4 @@
-![UI screenshot of the '01-Portland' kit preset from the 808TK virtual drum kit instrument for Decent Sampler]( /Docs/Images/Preset_UI_01_Portland.png )
+![UI screenshot of the 'Portland' kit preset included with the 808TK virtual drum kit instrument for Decent Sampler]( /Docs/Images/Preset_UI_01_Portland.png )
 
 # 808TK (DS)
 
@@ -6,20 +6,18 @@ The **808TK** is a virtual drum kit instrument for [Decent Sampler]( https://www
 
 ***
 
-1.  Compatibility
-2.  Installation
-3.  808TK Overview
-4.  Controls
-    - Continuous Controllers (CCs)
-5.  Customization
-6.  MIDI Reference
+1.  Requirements
+2.  Compatibility
+3.  Installation
+4.  808TK Overview
+5.  Controls
+6.  Getting Help
+7.  Getting Involved
+8.  Open Source Licensing Info
+9.  Additional Info
+10. MIDI Reference
     - Key Note Mapping
     - CC IDs
-7.  Getting Help
-8.  Getting Involved
-9.  Open Source Licensing Info
-10.  Credits
-11.  References
 
 ***
 
@@ -54,7 +52,7 @@ The **808TK** is compatible with Decent Sampler 1.7.3 and above.
 
 4.  Open the '808TK.dsbundle' folder and populate the empty *Samples* folder with the sample files located in the *wa_808_tape* folder from Wave Alchemy.
 
-5.  Load the **808TK** drum kit using the file browser in the Decent Sampler plug-in or standalone player.
+5.  Load the **808TK** drum kit instrument using the file browser in the Decent Sampler plug-in or standalone player.
 
 6.  Choose an instrument preset using the options menu.
 
@@ -62,7 +60,7 @@ The **808TK** is compatible with Decent Sampler 1.7.3 and above.
 
 ## 808TK Overview
 
-The **808TK** features fifty-three (53) 24-bit drum samples layered over sixteen (16) individual sound pads. The sound bank has been curated for optimal use with 4x4 drum pad controllers and finger drumming:
+The **808TK** features over fifty-three (53) 24-bit drum samples layered over sixteen (16) individual sound pads. The sound bank has been curated for optimal use with 4x4 drum pad controllers and finger drumming:
 
   - **DRUMS**: Kick (Sub), Kick, Low Tom, and High Tom
   - **SNARES**: Snare, Snare (Alt), Rim, and Clap
@@ -70,7 +68,7 @@ The **808TK** features fifty-three (53) 24-bit drum samples layered over sixteen
   - **CYMBALS**: Crash and Crash (Alt)
   - **PERCUSSION**: Clave and Maracas (FX)
 
-Multiple sound layers per pad with independent volume controls enable you to blend sounds to create unique sonic textures. Each drum pad contains multiple velocity layers to provide clean, saturated and driven variations for each sound. Round-robin sampling and non-linear sound design keep beats from sounding robotic. Switches provide a Loose/Tight option for the Hi-Hats and a Fast/Slow release option for the Cymbals.
+Multiple sound layers per pad with independent volume controls enable you to blend samples for each pad and dial in your perfect sound. Each drum pad contains multiple velocity layers to provide clean, saturated and driven variations for each sound. Round-robin sampling and non-linear sound design keep your beats from sounding robotic. Switches provide a Loose/Tight option for the Hi-Hats and a Fast/Slow release option for the Cymbals.
 
 ***
 
@@ -84,7 +82,48 @@ The **808TK** provides controls for:
 
 ***
 
+## Getting Help
+
+If you have any questions, concerns, bug reports, etc., we're *always* listening:
+
+ - File an issue in this repository's *Issue Tracker* on GitHub.
+ - Send us an email at support@genaudio.biz
+
+***
+
+## Getting Involved
+
+[Contribute]( https://genaudio.biz/contact-gen-audio/ ) to the future development of the **808TK** virtual drum kit for Decent Sampler:
+
+  - Give us your constructive feedback on the *Eugene* and *Portland* kit presets.
+  - Send us feature requests for the forthcoming *Vancouver* and *Seattle* kit presets.
+  - Create an **808TK** drum kit preset for *your* city.
+
+***
+
+### Open Source Licensing Info
+
+The **808TK** is an original work licensed under *GNU General Public License v3.0*.
+
+© Copyright 2023 by Jason Krueger (sourc3array@genaudio.biz)
+
+1. [LICENSE]( LICENSE )
+
+***
+
+### Additional Info
+
+1. [808TK]( https://github.com/sourc3array/808TK): Visit the open-source repository on GitHub to download the latest version, send feedback, file bug reports, or contribute to the project.
+2. [GEN Audio]( https://genaudio.biz ): Precision instruments, virtual instrument kits and tutorials for the #DecentSampler platform · Free & Open Source
+3. [808 Tape]( https://www.wavealchemy.co.uk/product/808-tape/ ): A free collection of TR-808 drum machine samples recorded directly to 1/4″ analog tape.
+4. [Wave Alchemy]( https://www.wavealchemy.co.uk/ ): Makers of award-winning virtual instruments, samples, and FX.
+5. [Decent Sampler]( https://www.decentsamples.com/product/decent-sampler-plugin/ ): A FREE sampling plugin and stand-alone player for Windows, MAC and Linux that enables users to create and play virtual instruments in the Decent Sampler format.
+
+***
+
 ## MIDI Reference
+
+To use custom MIDI note mappings, simply update your instrument preset file(s) accordingly using a text editor.
 
 ### Key Note Mapping
 
@@ -112,11 +151,11 @@ Default MIDI note numbers and names for the **808TK**:
 
 ### Continuous Controller IDs
 
-*Support for MIDI continuous controllers (CCs) will be included in the *Vancouver* drum kit preset.*
+Support for MIDI continuous controllers (CCs) **coming soon** with the *Vancouver* kit preset.*
 
-The Tight/Loose switch for the Mid Hat is assigned to the MIDI default for *Foot Pedals*.
+The *Tight/Loose* switch for the Mid Hat is assigned to the MIDI default for *Foot Pedals*.
 
-The default CC assignments for all Volume controls correspond to *Undefined* channels in the MIDI specification to minimize potential comflicts in typical MIDI setups.
+The default CC assignments for all Volume controls correspond to *Undefined* channels in the MIDI specification to minimize potential comflicts in typical MIDI setups:
 
   - 04 - (T) Tight
   
@@ -137,36 +176,5 @@ The default CC assignments for all Volume controls correspond to *Undefined* cha
 
   - 30 - (V) Crash
   - 31 - (V) Crash (ALT)
-  - 85 - (V) Clave
-  - 86 - (V) Maracas (FX)
-
-***
-
-## Getting Help
-
-If you have any questions, concerns, bug reports, etc., please contact us:
-
- - File an issue in this repository's *Issue Tracker* on GitHub.
- - Send us an email at support@genaudio.biz
-
-***
-
-## Getting Involved
-
-Contribute to the future development of the **808TK** drum kit with your:
-
-  - Constructive feedback
-  - Feature requests
-
-***
-
-### Open Source Licensing Info
-
-1. [LICENSE](LICENSE)
-
-***
-
-### References
-
-2. [808 Tape](https://www.wavealchemy.co.uk/product/808-tape/): Free collection of TR-808 drum machine samples recorded directly to 1/4″ analogue tape.
-5. [Wave Alchemy](https://www.wavealchemy.co.uk/): Makers of award-winning virtual instruments, samples and FX.
+  - 85 - (V) Maracas (FX)
+  - 86 - (V) Clave
