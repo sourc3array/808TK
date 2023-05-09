@@ -3,7 +3,7 @@
 <!--
 
     Instrument: 808TK (DS)
-    Preset: 02 - Portland | Version: 1.0.0-Alpha.1
+    Preset: 02 - Portland | Version: 1.0.0-Beta.1
     Designer: Jason Krueger (sourc3array)
     License: GNU GPL v3.0
     GitHub: https://github.com/sourc3array/808TK
@@ -172,7 +172,7 @@
 
             <button x="594" y="61" width="36" height="36" style="image" value="0">
             
-                <state name="CYM_SLOWE" mainImage="UI/Buttons/Switch_XS_A.png">
+                <state name="CYM_SLOW" mainImage="UI/Buttons/Switch_XS_A.png">
 
                     <binding type="amp" level="group" position="20" parameter="ENV_RELEASE" translation="fixed_value" translationValue="4.83" />
                     
@@ -255,9 +255,9 @@
 
             <!-- PAD 01 [A] :: KICK-A (SUB) -->
 
-            <sample loNote="35" rootNote="35" hiNote="35" loVel="0" hivel="79" path="Samples/wa_808tape_kick_01_clean.wav" />
+            <sample loNote="35" rootNote="35" hiNote="35" loVel="0" hivel="85" path="Samples/wa_808tape_kick_01_clean.wav" />
 
-            <sample loNote="35" rootNote="35" hiNote="35" loVel="80" hivel="127" path="Samples/wa_808tape_kick_01_sat.wav" />
+            <sample loNote="35" rootNote="35" hiNote="35" loVel="86" hivel="127" path="Samples/wa_808tape_kick_01_sat.wav" />
             
             <!-- KICK-A (SUB) :: END -->
             
@@ -314,11 +314,11 @@
 
             <!-- PAD 02 [A] :: KICK-B -->
 
-            <sample loNote="36" rootNote="36" hiNote="36" loVel="0" hivel="40" path="Samples/wa_808tape_kick_23_clean.wav" />
+            <sample loNote="36" rootNote="36" hiNote="36" loVel="0" hivel="61" path="Samples/wa_808tape_kick_23_clean.wav" />
 
-            <sample loNote="36" rootNote="36" hiNote="36" loVel="41" hivel="79" path="Samples/wa_808tape_kick_23_sat.wav" />
+            <sample loNote="36" rootNote="36" hiNote="36" lovel="62" hivel="105" path="Samples/wa_808tape_kick_23_sat.wav" />
 
-            <sample loNote="36" rootNote="36" hiNote="36" loVel="80" hivel="127" path="Samples/wa_808tape_kick_23_sat2.wav" />
+            <sample loNote="36" rootNote="36" hiNote="36" loVel="106" hivel="127" path="Samples/wa_808tape_kick_23_sat2.wav" />
             
             <!-- KICK-B :: END -->
 
@@ -330,9 +330,9 @@
 
             <!-- PAD 02 [B] :: FX-KICK -->
 
-            <sample loNote="36" rootNote="36" hiNote="36" loVel="0" hivel="64" path="Samples/wa_808tape_kick_01_sat.wav" />
+            <sample loNote="36" rootNote="36" hiNote="36" loVel="0" hivel="85" path="Samples/wa_808tape_kick_01_sat.wav" />
 
-            <sample loNote="36" rootNote="36" hiNote="36" loVel="65" hivel="127" path="Samples/wa_808tape_kick_01_sat2.wav" />
+            <sample loNote="36" rootNote="36" hiNote="36" loVel="86" hivel="127" path="Samples/wa_808tape_kick_01_sat2.wav" />
 
             <!-- FX-KICK :: END -->
             
@@ -344,11 +344,11 @@
         
             <!-- PAD 03 :: TOM-A (LO) -->
 
-            <sample loNote="41" rootNote="41" hiNote="41" loVel="0" hivel="40" path="Samples/wa_808tape_lotom_02_clean.wav" />
+            <sample loNote="41" rootNote="41" hiNote="41" loVel="0" hivel="61" path="Samples/wa_808tape_lotom_02_clean.wav" />
 
-            <sample loNote="41" rootNote="41" hiNote="41" loVel="41" hivel="79" path="Samples/wa_808tape_lotom_02_sat.wav" />
+            <sample loNote="41" rootNote="41" hiNote="41" lovel="62" hivel="105" path="Samples/wa_808tape_lotom_02_sat.wav" />
 
-            <sample loNote="41" rootNote="41" hiNote="41" loVel="80" hivel="127" path="Samples/wa_808tape_lotom_02_sat2.wav" />
+            <sample loNote="41" rootNote="41" hiNote="41" loVel="106" hivel="127" path="Samples/wa_808tape_lotom_02_sat2.wav" />
             
             <!-- TOM-A (LO) :: END -->
             
@@ -360,9 +360,9 @@
         
             <!-- PAD 03 :: FX-TOM -->
 
-            <sample loNote="41" rootNote="41" hiNote="41" loVel="0" hivel="64" path="Samples/wa_808tape_midtom_01_clean.wav" />
+            <sample loNote="41" rootNote="41" hiNote="41" loVel="0" hivel="85" path="Samples/wa_808tape_midtom_01_clean.wav" />
 
-            <sample loNote="41" rootNote="41" hiNote="41" loVel="65" hivel="127" path="Samples/wa_808tape_midtom_01_sat.wav" />
+            <sample loNote="41" rootNote="41" hiNote="41" loVel="86" hivel="127" path="Samples/wa_808tape_midtom_01_sat.wav" />
             
             <!-- FX-TOM :: END -->
             
@@ -374,11 +374,11 @@
 
             <!-- PAD 04 [A] :: TOM-B (HI) -->
 
-            <sample loNote="43" rootNote="43" hiNote="43" loVel="0" hivel="40" path="Samples/wa_808tape_hitom_01_clean.wav" />
+            <sample loNote="43" rootNote="43" hiNote="43" loVel="0" hivel="61" path="Samples/wa_808tape_hitom_01_clean.wav" />
 
-            <sample loNote="43" rootNote="43" hiNote="43" loVel="41" hivel="79" path="Samples/wa_808tape_hitom_01_sat.wav" />
+            <sample loNote="43" rootNote="43" hiNote="43" lovel="62" hivel="105" path="Samples/wa_808tape_hitom_01_sat.wav" />
 
-            <sample loNote="43" rootNote="43" hiNote="43" loVel="80" hivel="127" path="Samples/wa_808tape_hitom_01_sat2.wav" />
+            <sample loNote="43" rootNote="43" hiNote="43" loVel="106" hivel="127" path="Samples/wa_808tape_hitom_01_sat2.wav" />
             
             <!-- TOM-B (HI) :: END -->
             
@@ -397,9 +397,9 @@
         
             <!-- PAD 04 [B] :: FX-TOM -->
 
-            <sample loNote="43" rootNote="43" hiNote="43" loVel="0" hivel="64" path="Samples/wa_808tape_hitom_02_clean.wav" />
+            <sample loNote="43" rootNote="43" hiNote="43" loVel="0" hivel="85" path="Samples/wa_808tape_hitom_02_clean.wav" />
 
-            <sample loNote="43" rootNote="43" hiNote="43" loVel="65" hivel="127" path="Samples/wa_808tape_hitom_02_sat.wav" />
+            <sample loNote="43" rootNote="43" hiNote="43" loVel="86" hivel="127" path="Samples/wa_808tape_hitom_02_sat.wav" />
             
             <!-- FX-TOM :: END -->
             
@@ -411,11 +411,11 @@
 
             <!-- PAD 05 [A] :: SNARE-A -->
 
-            <sample loNote="38" rootNote="38" hiNote="38" loVel="0" hivel="40" path="Samples/wa_808tape_snare_01_clean.wav" />
+            <sample loNote="38" rootNote="38" hiNote="38" loVel="0" hivel="61" path="Samples/wa_808tape_snare_01_clean.wav" />
 
-            <sample loNote="38" rootNote="38" hiNote="38" loVel="41" hivel="79" path="Samples/wa_808tape_snare_01_sat.wav" />
+            <sample loNote="38" rootNote="38" hiNote="38" lovel="62" hivel="105" path="Samples/wa_808tape_snare_01_sat.wav" />
 
-            <sample loNote="38" rootNote="38" hiNote="38" loVel="80" hivel="127" path="Samples/wa_808tape_snare_01_sat2.wav" />
+            <sample loNote="38" rootNote="38" hiNote="38" loVel="106" hivel="127" path="Samples/wa_808tape_snare_01_sat2.wav" />
         
             <!-- SNARE-A :: END -->
             
@@ -452,11 +452,11 @@
 
             <!-- PAD 06 [A] :: SNARE-B (ALT) -->
 
-            <sample loNote="40" rootNote="40" hiNote="40" loVel="0" hivel="40" path="Samples/wa_808tape_snare_30_clean.wav" />
+            <sample loNote="40" rootNote="40" hiNote="40" loVel="0" hivel="61" path="Samples/wa_808tape_snare_30_clean.wav" />
 
-            <sample loNote="40" rootNote="40" hiNote="40" loVel="41" hivel="79" path="Samples/wa_808tape_snare_30_sat.wav" />
+            <sample loNote="40" rootNote="40" hiNote="40" lovel="62" hivel="105" path="Samples/wa_808tape_snare_30_sat.wav" />
 
-            <sample loNote="40" rootNote="40" hiNote="40" loVel="80" hivel="127" path="Samples/wa_808tape_snare_30_sat2.wav" />
+            <sample loNote="40" rootNote="40" hiNote="40" loVel="106" hivel="127" path="Samples/wa_808tape_snare_30_sat2.wav" />
             
             <!-- SNARE-B (ALT) :: END -->
 
@@ -471,9 +471,9 @@
 
             <!-- PAD 06 [B] :: FX-SNARE -->
 
-            <sample loNote="40" rootNote="40" hiNote="40" loVel="0" hivel="64" path="Samples/wa_808tape_snare_01_clean.wav" />
+            <sample loNote="40" rootNote="40" hiNote="40" loVel="0" hivel="85" path="Samples/wa_808tape_snare_01_clean.wav" />
 
-            <sample loNote="40" rootNote="40" hiNote="40" loVel="65" hivel="127" path="Samples/wa_808tape_snare_01_sat.wav" />
+            <sample loNote="40" rootNote="40" hiNote="40" loVel="86" hivel="127" path="Samples/wa_808tape_snare_01_sat.wav" />
             
             <!-- FX-SNARE :: END -->
             
@@ -485,11 +485,11 @@
 
             <!-- PAD 07 :: ALT-A (RIM) -->
 
-            <sample loNote="37" rootNote="37" hiNote="37" loVel="0" hivel="40" path="Samples/wa_808tape_rim_02_clean.wav" />
+            <sample loNote="37" rootNote="37" hiNote="37" loVel="0" hivel="61" path="Samples/wa_808tape_rim_02_clean.wav" />
 
-            <sample loNote="37" rootNote="37" hiNote="37" loVel="41" hivel="79" path="Samples/wa_808tape_rim_02_sat.wav" />
+            <sample loNote="37" rootNote="37" hiNote="37" lovel="62" hivel="105" path="Samples/wa_808tape_rim_02_sat.wav" />
 
-            <sample loNote="37" rootNote="37" hiNote="37" loVel="80" hivel="127" path="Samples/wa_808tape_rim_02_sat2.wav" />
+            <sample loNote="37" rootNote="37" hiNote="37" loVel="106" hivel="127" path="Samples/wa_808tape_rim_02_sat2.wav" />
             
             <!-- ALT-A (RIM) :: END -->
             
@@ -506,22 +506,22 @@
             <!-- PAD 08 [B] :: ALT-B (Clap) [B]-->
 
             <!--  V-LAYER 01 > ROUND-ROBIN 01 -->
-            <sample loNote="39" rootNote="39" hiNote="39" loVel="0" hivel="40" path="Samples/wa_808tape_clap_01_clean.wav" />
+            <sample loNote="39" rootNote="39" hiNote="39" loVel="0" hivel="61" path="Samples/wa_808tape_clap_01_clean.wav" />
 
             <!--  V-LAYER 02 > ROUND-ROBIN 01 -->
-            <sample loNote="39" rootNote="39" hiNote="39" loVel="41" hivel="79" seqMode="true_random" seqLength="2" seqPosition="1" path="Samples/wa_808tape_clap_01_sat.wav" />
+            <sample loNote="39" rootNote="39" hiNote="39" lovel="62" hivel="105" seqMode="true_random" seqLength="2" seqPosition="1" path="Samples/wa_808tape_clap_01_sat.wav" />
 
             <!--  V-LAYER 02 > ROUND-ROBIN 02 -->
-            <sample loNote="39" rootNote="39" hiNote="39" loVel="41" hivel="79" seqMode="true_random" seqLength="2" seqPosition="2" path="Samples/wa_808tape_clap_02_sat.wav" />
+            <sample loNote="39" rootNote="39" hiNote="39" lovel="62" hivel="105" seqMode="true_random" seqLength="2" seqPosition="2" path="Samples/wa_808tape_clap_02_sat.wav" />
 
             <!--  V-LAYER 03 > ROUND-ROBIN 01 -->
-            <sample loNote="39" rootNote="39" hiNote="39" loVel="80" hivel="127" seqMode="true_random" seqLength="3" seqPosition="1" path="Samples/wa_808tape_clap_01_sat.wav" />
+            <sample loNote="39" rootNote="39" hiNote="39" loVel="106" hivel="127" seqMode="true_random" seqLength="3" seqPosition="1" path="Samples/wa_808tape_clap_01_sat.wav" />
 
             <!--  V-LAYER 03 > ROUND-ROBIN 02 -->
-            <sample loNote="39" rootNote="39" hiNote="39" loVel="80" hivel="127" seqMode="true_random" seqLength="3" seqPosition="2" path="Samples/wa_808tape_clap_02_sat.wav" />
+            <sample loNote="39" rootNote="39" hiNote="39" loVel="106" hivel="127" seqMode="true_random" seqLength="3" seqPosition="2" path="Samples/wa_808tape_clap_02_sat.wav" />
 
             <!--  V-LAYER 03 > ROUND-ROBIN 03 -->
-            <sample loNote="39" rootNote="39" hiNote="39" loVel="80" hivel="127" seqMode="true_random" seqLength="3" seqPosition="3" path="Samples/wa_808tape_clap_03_sat.wav" />
+            <sample loNote="39" rootNote="39" hiNote="39" loVel="106" hivel="127" seqMode="true_random" seqLength="3" seqPosition="3" path="Samples/wa_808tape_clap_03_sat.wav" />
 
             <!-- ALT-B (CLAP) :: END -->
             
@@ -533,11 +533,11 @@
 
             <!-- PAD 09 :: CLOSED HAT -->
 
-            <sample loNote="42" rootNote="42" hiNote="42" loVel="0" hivel="40" path="Samples/wa_808tape_closedhat_01_clean.wav" />
+            <sample loNote="42" rootNote="42" hiNote="42" loVel="0" hivel="61" path="Samples/wa_808tape_closedhat_01_clean.wav" />
 
-            <sample loNote="42" rootNote="42" hiNote="42" loVel="41" hivel="79" path="Samples/wa_808tape_closedhat_01_sat.wav" />
+            <sample loNote="42" rootNote="42" hiNote="42" lovel="62" hivel="105" path="Samples/wa_808tape_closedhat_01_sat.wav" />
 
-            <sample loNote="42" rootNote="42" hiNote="42" loVel="80" hivel="127" path="Samples/wa_808tape_closedhat_01_sat2.wav" />
+            <sample loNote="42" rootNote="42" hiNote="42" loVel="106" hivel="127" path="Samples/wa_808tape_closedhat_01_sat2.wav" />
 
             <!-- CLOSED HAT :: END -->
 
@@ -549,11 +549,11 @@
 
             <!-- PAD 10 :: CLOSED HAT (CHIK) -->
 
-            <sample loNote="44" rootNote="44" hiNote="44" loVel="0" hivel="40" path="Samples/wa_808tape_closedhat_10_clean.wav" />
+            <sample loNote="44" rootNote="44" hiNote="44" loVel="0" hivel="61" path="Samples/wa_808tape_closedhat_10_clean.wav" />
 
-            <sample loNote="44" rootNote="44" hiNote="44" loVel="41" hivel="79" path="Samples/wa_808tape_closedhat_10_sat.wav" />
+            <sample loNote="44" rootNote="44" hiNote="44" lovel="62" hivel="105" path="Samples/wa_808tape_closedhat_10_sat.wav" />
 
-            <sample loNote="44" rootNote="44" hiNote="44" loVel="80" hivel="127" path="Samples/wa_808tape_closedhat_10_sat2.wav" />
+            <sample loNote="44" rootNote="44" hiNote="44" loVel="106" hivel="127" path="Samples/wa_808tape_closedhat_10_sat2.wav" />
 
              <!-- CLOSED HAT :: END -->
 
@@ -565,9 +565,9 @@
 
             <!-- PAD 11 :: MID HAT -->
 
-            <sample loNote="45" rootNote="45" hiNote="45" loVel="0" hivel="40" path="Samples/wa_808tape_openhat_01_clean.wav" />
+            <sample loNote="45" rootNote="45" hiNote="45" loVel="0" hivel="61" path="Samples/wa_808tape_openhat_01_clean.wav" />
 
-            <sample loNote="45" rootNote="45" hiNote="45" loVel="41" hivel="79" path="Samples/wa_808tape_openhat_01_sat.wav" />
+            <sample loNote="45" rootNote="45" hiNote="45" lovel="62" hivel="105" path="Samples/wa_808tape_openhat_01_sat.wav" />
 
             <!-- MID HAT :: END -->
 
@@ -579,7 +579,7 @@
 
             <!-- PAD 11 :: MID HAT [Tight] -->
 
-            <sample loNote="45" rootNote="45" hiNote="45" loVel="80" hivel="127" path="Samples/wa_808tape_openhat_01_sat2.wav" />
+            <sample loNote="45" rootNote="45" hiNote="45" loVel="106" hivel="127" path="Samples/wa_808tape_openhat_01_sat2.wav" />
 
             <!-- MID HAT [Tight] :: END -->
 
@@ -591,7 +591,7 @@
 
             <!-- PAD 11 :: MID HAT [Loose] -->
 
-            <sample loNote="45" rootNote="45" hiNote="45" loVel="80" hivel="127" path="Samples/wa_808tape_openhat_02_sat2.wav" />
+            <sample loNote="45" rootNote="45" hiNote="45" loVel="106" hivel="127" path="Samples/wa_808tape_openhat_02_sat2.wav" />
 
             <!-- MID HAT [Loose] :: END -->
 
@@ -603,11 +603,11 @@
 
             <!-- PAD 12 :: OPEN HAT -->
 
-            <sample loNote="47" rootNote="47" hiNote="47" loVel="0" hivel="40" path="Samples/wa_808tape_openhat_03_clean.wav" />
+            <sample loNote="47" rootNote="47" hiNote="47" loVel="0" hivel="61" path="Samples/wa_808tape_openhat_03_clean.wav" />
 
-            <sample loNote="47" rootNote="47" hiNote="47" loVel="41" hivel="79" path="Samples/wa_808tape_openhat_03_sat.wav" />
+            <sample loNote="47" rootNote="47" hiNote="47" lovel="62" hivel="105" path="Samples/wa_808tape_openhat_03_sat.wav" />
 
-            <sample loNote="47" rootNote="47" hiNote="47" loVel="80" hivel="127" path="Samples/wa_808tape_openhat_03_sat2.wav" />
+            <sample loNote="47" rootNote="47" hiNote="47" loVel="106" hivel="127" path="Samples/wa_808tape_openhat_03_sat2.wav" />
 
             <!-- OPEN HAT :: END -->
 
@@ -619,11 +619,11 @@
 
             <!-- PAD 13 :: CRASH -->
 
-            <sample loNote="48" rootNote="48" hiNote="48" loVel="0" hivel="40" path="Samples/wa_808tape_crash_04_clean.wav" />
+            <sample loNote="48" rootNote="48" hiNote="48" loVel="0" hivel="61" path="Samples/wa_808tape_crash_04_clean.wav" />
 
-            <sample loNote="48" rootNote="48" hiNote="48" loVel="41" hivel="79" path="Samples/wa_808tape_crash_04_sat.wav" />
+            <sample loNote="48" rootNote="48" hiNote="48" lovel="62" hivel="105" path="Samples/wa_808tape_crash_04_sat.wav" />
 
-            <sample loNote="48" rootNote="48" hiNote="48" loVel="80" hivel="127" path="Samples/wa_808tape_crash_04_sat2.wav" />
+            <sample loNote="48" rootNote="48" hiNote="48" loVel="106" hivel="127" path="Samples/wa_808tape_crash_04_sat2.wav" />
 
             <!-- CRASH :: END -->
 
@@ -635,11 +635,11 @@
 
             <!-- PAD 14 :: CRASH-ALT -->
 
-            <sample loNote="50" rootNote="50" hiNote="50" loVel="0" hivel="40" path="Samples/wa_808tape_crash_01_clean.wav" />
+            <sample loNote="50" rootNote="50" hiNote="50" loVel="0" hivel="61" path="Samples/wa_808tape_crash_01_clean.wav" />
 
-            <sample loNote="50" rootNote="50" hiNote="50" loVel="41" hivel="79" path="Samples/wa_808tape_crash_01_sat.wav" />
+            <sample loNote="50" rootNote="50" hiNote="50" lovel="62" hivel="105" path="Samples/wa_808tape_crash_01_sat.wav" />
 
-            <sample loNote="50" rootNote="50" hiNote="50" loVel="80" hivel="127" path="Samples/wa_808tape_crash_01_sat2.wav" />
+            <sample loNote="50" rootNote="50" hiNote="50" loVel="106" hivel="127" path="Samples/wa_808tape_crash_01_sat2.wav" />
 
             <!-- CRASH-ALT :: END -->
 
@@ -652,22 +652,22 @@
             <!-- PAD 15 [A] :: MARACAS -->
 
             <!--  V-LAYER 01 > ROUND-ROBIN 01 -->
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="0" hivel="40" path="Samples/wa_808tape_maracas_04_clean.wav" />
+            <sample loNote="46" rootNote="46" hiNote="46" loVel="0" hivel="61" path="Samples/wa_808tape_maracas_04_clean.wav" />
 
             <!--  V-LAYER 02 > ROUND-ROBIN 01 -->
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="41" hivel="79" seqMode="true_random" seqLength="2" seqPosition="1" path="Samples/wa_808tape_maracas_04_sat.wav" />
+            <sample loNote="46" rootNote="46" hiNote="46" lovel="62" hivel="105" seqMode="true_random" seqLength="2" seqPosition="1" path="Samples/wa_808tape_maracas_04_sat.wav" />
 
             <!--  V-LAYER 02 > ROUND-ROBIN 02 -->
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="41" hivel="79" seqMode="true_random" seqLength="2" seqPosition="2" path="Samples/wa_808tape_maracas_02_sat.wav" />
+            <sample loNote="46" rootNote="46" hiNote="46" lovel="62" hivel="105" seqMode="true_random" seqLength="2" seqPosition="2" path="Samples/wa_808tape_maracas_02_sat.wav" />
 
             <!--  V-LAYER 03 > ROUND-ROBIN 01 -->
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="80" hivel="127" seqMode="true_random" seqLength="3" seqPosition="1" path="Samples/wa_808tape_maracas_04_sat2.wav" />
+            <sample loNote="46" rootNote="46" hiNote="46" loVel="106" hivel="127" seqMode="true_random" seqLength="3" seqPosition="1" path="Samples/wa_808tape_maracas_04_sat2.wav" />
 
             <!--  V-LAYER 03 > ROUND-ROBIN 02 -->
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="80" hivel="127" seqMode="true_random" seqLength="3" seqPosition="2" path="Samples/wa_808tape_maracas_03_sat2.wav" />
+            <sample loNote="46" rootNote="46" hiNote="46" loVel="106" hivel="127" seqMode="true_random" seqLength="3" seqPosition="2" path="Samples/wa_808tape_maracas_03_sat2.wav" />
 
             <!--  V-LAYER 03 > ROUND-ROBIN 03 -->
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="80" hivel="127" seqMode="true_random" seqLength="3" seqPosition="3" path="Samples/wa_808tape_maracas_02_sat2.wav" />
+            <sample loNote="46" rootNote="46" hiNote="46" loVel="106" hivel="127" seqMode="true_random" seqLength="3" seqPosition="3" path="Samples/wa_808tape_maracas_02_sat2.wav" />
 
             <!-- MARACAS :: END -->
 
@@ -683,22 +683,22 @@
             <!-- PAD 15 [B] :: PERC-FX (Cowbell) -->
 
             <!--  V-LAYER 01 > ROUND-ROBIN 01 -->
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="0" hivel="64" seqMode="true_random" seqLength="3" seqPosition="1" path="Samples/wa_808tape_clave_01_clean.wav" />
+            <sample loNote="46" rootNote="46" hiNote="46" loVel="0" hivel="85" seqMode="true_random" seqLength="3" seqPosition="1" path="Samples/wa_808tape_clave_01_clean.wav" />
 
             <!--  V-LAYER 01 > ROUND-ROBIN 02 -->
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="0" hivel="64" seqMode="true_random" seqLength="3" seqPosition="2" path="Samples/wa_808tape_clave_02_clean.wav" />
+            <sample loNote="46" rootNote="46" hiNote="46" loVel="0" hivel="85" seqMode="true_random" seqLength="3" seqPosition="2" path="Samples/wa_808tape_clave_02_clean.wav" />
 
             <!--  V-LAYER 01 > ROUND-ROBIN 03 -->
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="0" hivel="64" seqMode="true_random" seqLength="3" seqPosition="3" path="Samples/wa_808tape_clave_03_clean.wav" />
+            <sample loNote="46" rootNote="46" hiNote="46" loVel="0" hivel="85" seqMode="true_random" seqLength="3" seqPosition="3" path="Samples/wa_808tape_clave_03_clean.wav" />
 
             <!--  V-LAYER 02 > ROUND-ROBIN 01 -->
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="65" hivel="127" seqMode="true_random" seqLength="3" seqPosition="1" path="Samples/wa_808tape_clave_01_sat.wav" />
+            <sample loNote="46" rootNote="46" hiNote="46" loVel="86" hivel="127" seqMode="true_random" seqLength="3" seqPosition="1" path="Samples/wa_808tape_clave_01_sat.wav" />
 
             <!--  V-LAYER 02 > ROUND-ROBIN 02 -->
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="65" hivel="127" seqMode="true_random" seqLength="3" seqPosition="2" path="Samples/wa_808tape_clave_02_sat.wav" />
+            <sample loNote="46" rootNote="46" hiNote="46" loVel="86" hivel="127" seqMode="true_random" seqLength="3" seqPosition="2" path="Samples/wa_808tape_clave_02_sat.wav" />
 
             <!--  V-LAYER 02 > ROUND-ROBIN 03 -->
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="65" hivel="127" seqMode="true_random" seqLength="3" seqPosition="3" path="Samples/wa_808tape_clave_03_sat.wav" />
+            <sample loNote="46" rootNote="46" hiNote="46" loVel="86" hivel="127" seqMode="true_random" seqLength="3" seqPosition="3" path="Samples/wa_808tape_clave_03_sat.wav" />
 
             <!-- PERC-FX (Cowbell) :: END -->
 
@@ -713,11 +713,11 @@
 
             <!-- PAD 15 :: CLAVE -->
 
-            <sample loNote="49" rootNote="49" hiNote="49" loVel="0" hivel="40" path="Samples/wa_808tape_maracas_03_clean.wav" />
+            <sample loNote="49" rootNote="49" hiNote="49" loVel="0" hivel="61" path="Samples/wa_808tape_maracas_03_clean.wav" />
 
-            <sample loNote="49" rootNote="49" hiNote="49" loVel="41" hivel="79" path="Samples/wa_808tape_maracas_03_sat.wav" />
+            <sample loNote="49" rootNote="49" hiNote="49" lovel="62" hivel="105" path="Samples/wa_808tape_maracas_03_sat.wav" />
 
-            <sample loNote="49" rootNote="49" hiNote="49" loVel="80" hivel="127" path="Samples/wa_808tape_maracas_03_sat2.wav" />
+            <sample loNote="49" rootNote="49" hiNote="49" loVel="106" hivel="127" path="Samples/wa_808tape_maracas_03_sat2.wav" />
 
             <!-- CLAVE :: END -->
                         

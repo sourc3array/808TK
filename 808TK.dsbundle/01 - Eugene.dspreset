@@ -3,7 +3,7 @@
 <!--
 
     Instrument: 808TK (DS)
-    Preset: 01 - Eugene | Version: 1.0.0-Alpha.1
+    Preset: 01 - Eugene | Version: 1.0.0-Beta.1
     Designer: Jason Krueger (sourc3array)
     License: GNU GPL v3.0
     GitHub: https://github.com/sourc3array/808TK
@@ -31,7 +31,9 @@
                 <binding type="amp" level="group" position="1" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
                                 
                 <binding type="amp" level="group" position="2" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-                
+
+                <binding type="amp" level="group" position="3" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+
             </control>
             
             <!-- UI 02 :: LABEL (SNARES) -->
@@ -42,13 +44,13 @@
             
             <control x="234" y="36" width="48" height="48" parameterName="SNARES_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
 
-                <binding type="amp" level="group" position="3" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-                
                 <binding type="amp" level="group" position="4" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
                 
                 <binding type="amp" level="group" position="5" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
                 
                 <binding type="amp" level="group" position="6" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                
+                <binding type="amp" level="group" position="7" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
                 
             </control>
             
@@ -60,13 +62,13 @@
             
             <control x="376" y="36" width="48" height="48" parameterName="HI_HATS_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
 
-                <binding type="amp" level="group" position="7" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-
                 <binding type="amp" level="group" position="8" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
                 <binding type="amp" level="group" position="9" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-                
+
                 <binding type="amp" level="group" position="10" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+                
+                <binding type="amp" level="group" position="11" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
             </control>
             
@@ -78,9 +80,9 @@
             
             <control x="518" y="36" width="48" height="48" parameterName="CYM_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
 
-                <binding type="amp" level="group" position="11" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-
                 <binding type="amp" level="group" position="12" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+
+                <binding type="amp" level="group" position="13" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
             </control>
 
@@ -92,9 +94,9 @@
             
             <control x="664" y="36" width="48" height="48" parameterName="PERC_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_V.png" customSkinNumFrames="101" >
 
-                <binding type="amp" level="group" position="13" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
-
                 <binding type="amp" level="group" position="14" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
+
+                <binding type="amp" level="group" position="15" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
             </control>
 
@@ -123,23 +125,23 @@
 
         <!-- GROUP 00 :: PAD 01 -->
 
-        <group ampVelTrack="0.80" release="0.23" groupTuning="-12.0">
+        <group ampVelTrack="0.80" release="0.31" volume="12.4dB" groupTuning="-12.0">
 
             <!-- PAD 01 :: KICK A (SUB) -->
 
-            <sample loNote="35" rootNote="35" hiNote="35" loVel="0" hivel="64" path="Samples/wa_808tape_kick_01_clean.wav" />
+            <sample loNote="35" rootNote="35" hiNote="35" loVel="0" hivel="85" path="Samples/wa_808tape_kick_01_clean.wav" />
 
-            <sample loNote="35" rootNote="35" hiNote="35" loVel="65" hivel="127" path="Samples/wa_808tape_kick_01_sat.wav" />
+            <sample loNote="35" rootNote="35" hiNote="35" loVel="86" hivel="127" path="Samples/wa_808tape_kick_01_sat.wav" />
             
             <!-- KICK A (SUB) :: END -->
             
             <effects>
-
-                <!-- [G] 00 [FX] 00 :: Low-Pass Filter -->
+                
+                <!-- [G] 00 [FX] 01 :: Lo-Pass Filter -->
                 <effect type="lowpass" resonance="0.33" frequency="200" />
 
-                <!-- [G] 00 [FX] 01 :: Gain -->
-                <effect type="gain" level="2.0" />
+                <!-- [G] 00 [FX] 02 :: Gain -->
+                <effect type="gain" level="3.0" />
 
             </effects>
             
@@ -147,240 +149,294 @@
         
         <!-- GROUP 01 :: PAD 02 -->
         
-        <group ampVelTrack="0.80" release="1.99">
+        <group ampVelTrack="0.80" release="2.49" volume="-0.4dB">
 
             <!-- PAD 02 :: KICK B -->
 
-            <sample loNote="36" rootNote="36" hiNote="36" loVel="0" hivel="20" path="Samples/wa_808tape_kick_23_clean.wav" />
+            <sample loNote="36" rootNote="36" hiNote="36" loVel="0" hivel="61" path="Samples/wa_808tape_kick_23_clean.wav" />
 
-            <sample loNote="36" rootNote="36" hiNote="36" lovel="21" hivel="64" path="Samples/wa_808tape_kick_23_sat.wav" />
+            <sample loNote="36" rootNote="36" hiNote="36" lovel="62" hivel="105" path="Samples/wa_808tape_kick_23_sat.wav" />
 
-            <sample loNote="36" rootNote="36" hiNote="36" loVel="65" hivel="127" path="Samples/wa_808tape_kick_23_sat2.wav" />
+            <sample loNote="36" rootNote="36" hiNote="36" loVel="106" hivel="127" path="Samples/wa_808tape_kick_23_sat2.wav" />
             
             <!-- KICK B :: END -->
             
         </group>
         
-        <!-- GROUP 02 :: TOMS GROUP -->
+        <!-- GROUP 02 :: TOM A -->
         
-        <group ampVelTrack="0.80" release="0.51">
+        <group ampVelTrack="0.80" release="0.66" volume="9.9dB" pan="-50">
         
             <!-- PAD 03 :: TOM A (LO) -->
 
-            <sample loNote="41" rootNote="41" hiNote="41" loVel="0" hivel="20" pan="24" path="Samples/wa_808tape_lotom_02_clean.wav" />
+            <sample loNote="41" rootNote="41" hiNote="41" loVel="0" hivel="61" path="Samples/wa_808tape_lotom_02_clean.wav" />
 
-            <sample loNote="41" rootNote="41" hiNote="41" lovel="21" hivel="64" pan="24" path="Samples/wa_808tape_lotom_02_sat.wav" />
+            <sample loNote="41" rootNote="41" hiNote="41" lovel="62" hivel="105" path="Samples/wa_808tape_lotom_02_sat.wav" />
 
-            <sample loNote="41" rootNote="41" hiNote="41" loVel="65" hivel="127" pan="24" path="Samples/wa_808tape_lotom_02_sat2.wav" />
+            <sample loNote="41" rootNote="41" hiNote="41" loVel="106" hivel="127" path="Samples/wa_808tape_lotom_02_sat2.wav" />
             
             <!-- TOM A (LO) :: END -->
 
-            <!-- PAD 04 :: TOM B (HI) -->
-
-            <sample loNote="43" rootNote="43" hiNote="43" loVel="0" hivel="20" pan="36" path="Samples/wa_808tape_hitom_01_clean.wav" />
-
-            <sample loNote="43" rootNote="43" hiNote="43" lovel="21" hivel="64" pan="36" path="Samples/wa_808tape_hitom_01_sat.wav" />
-
-            <sample loNote="43" rootNote="43" hiNote="43" loVel="65" hivel="127" pan="36" path="Samples/wa_808tape_hitom_01_sat2.wav" />
-            
-            <!-- TOM B (HI) :: END -->
-            
             <effects>
 
-                <!-- [G] 02 [FX] 00 :: Low-Pass Filter -->
-                <effect type="lowpass" resonance="0.33" frequency="1200" />
+                <!-- [G] 02 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="30" />
 
             </effects>
 
         </group>
 
-        <!-- GROUP 03 :: PAD 05 -->
+        <!-- GROUP 03 :: TOM B -->
         
-        <group ampVelTrack="0.90" release="0.22">
+        <group ampVelTrack="0.80" release="0.66" volume="3.5dB" pan="-15">
+
+            <!-- PAD 04 :: TOM B (HI) -->
+
+            <sample loNote="43" rootNote="43" hiNote="43" loVel="0" hivel="61" path="Samples/wa_808tape_hitom_01_clean.wav" />
+
+            <sample loNote="43" rootNote="43" hiNote="43" lovel="62" hivel="105" path="Samples/wa_808tape_hitom_01_sat.wav" />
+
+            <sample loNote="43" rootNote="43" hiNote="43" loVel="106" hivel="127" path="Samples/wa_808tape_hitom_01_sat2.wav" />
+            
+            <!-- TOM B (HI) :: END -->
+            
+            <effects>
+
+                <!-- [G] 03 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="50" />
+
+            </effects>
+
+        </group>
+
+        <!-- GROUP 04 :: PAD 05 -->
+        
+        <group ampVelTrack="0.90" release="0.29" volume="5.2dB">
 
             <!-- PAD 05 :: SNARE A -->
 
-            <sample loNote="38" rootNote="38" hiNote="38" loVel="0" hivel="20" path="Samples/wa_808tape_snare_01_clean.wav" />
+            <sample loNote="38" rootNote="38" hiNote="38" loVel="0" hivel="61" path="Samples/wa_808tape_snare_01_clean.wav" />
 
-            <sample loNote="38" rootNote="38" hiNote="38" lovel="21" hivel="64" path="Samples/wa_808tape_snare_01_sat.wav" />
+            <sample loNote="38" rootNote="38" hiNote="38" lovel="62" hivel="105" path="Samples/wa_808tape_snare_01_sat.wav" />
 
-            <sample loNote="38" rootNote="38" hiNote="38" loVel="65" hivel="127" path="Samples/wa_808tape_snare_01_sat2.wav" />
+            <sample loNote="38" rootNote="38" hiNote="38" loVel="106" hivel="127" path="Samples/wa_808tape_snare_01_sat2.wav" />
         
             <!-- SNARE A :: END -->
+
+            <effects>
+
+                <!-- [G] 04 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="80" />
+
+            </effects>
             
         </group>
         
-        <!-- GROUP 04 :: PAD 06 -->
+        <!-- GROUP 05 :: PAD 06 -->
         
-        <group ampVelTrack="0.90" release="0.23">
+        <group ampVelTrack="0.90" release="0.31" volume="-2.2dB">
 
             <!-- PAD 06 :: SNARE B (ALT) -->
 
-            <sample loNote="40" rootNote="40" hiNote="40" loVel="0" hivel="20" path="Samples/wa_808tape_snare_30_clean.wav" />
+            <sample loNote="40" rootNote="40" hiNote="40" loVel="0" hivel="61" path="Samples/wa_808tape_snare_30_clean.wav" />
 
-            <sample loNote="40" rootNote="40" hiNote="40" lovel="21" hivel="64" path="Samples/wa_808tape_snare_30_sat.wav" />
+            <sample loNote="40" rootNote="40" hiNote="40" lovel="62" hivel="105" path="Samples/wa_808tape_snare_30_sat.wav" />
 
-            <sample loNote="40" rootNote="40" hiNote="40" loVel="65" hivel="127" path="Samples/wa_808tape_snare_30_sat2.wav" />
+            <sample loNote="40" rootNote="40" hiNote="40" loVel="106" hivel="127" path="Samples/wa_808tape_snare_30_sat2.wav" />
             
             <!-- SNARE B (ALT) :: END -->
+
+            <effects>
+
+                <!-- [G] 05 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="100" />
+
+            </effects>
             
         </group>
         
-        <!-- GROUP 05 :: PAD 07 -->
+        <!-- GROUP 06 :: PAD 07 -->
         
-        <group ampVelTrack="0.80" release="0.05">
+        <group ampVelTrack="0.80" release="0.08" volume="-0.7dB" pan="-5">
 
             <!-- PAD 07 :: ALT A (RIM) -->
 
-            <sample loNote="37" rootNote="37" hiNote="37" loVel="0" hivel="20" path="Samples/wa_808tape_rim_02_clean.wav" />
+            <sample loNote="37" rootNote="37" hiNote="37" loVel="0" hivel="61" path="Samples/wa_808tape_rim_02_clean.wav" />
 
-            <sample loNote="37" rootNote="37" hiNote="37" lovel="21" hivel="64" path="Samples/wa_808tape_rim_02_sat.wav" />
+            <sample loNote="37" rootNote="37" hiNote="37" lovel="62" hivel="105" path="Samples/wa_808tape_rim_02_sat.wav" />
 
-            <sample loNote="37" rootNote="37" hiNote="37" loVel="65" hivel="127" path="Samples/wa_808tape_rim_02_sat2.wav" />
+            <sample loNote="37" rootNote="37" hiNote="37" loVel="106" hivel="127" path="Samples/wa_808tape_rim_02_sat2.wav" />
             
             <!-- ALT A (RIM) :: END -->
             
         </group>
         
-        <!-- GROUP 06 :: PAD 08 -->
+        <!-- GROUP 07 :: PAD 08 -->
         
-        <group ampVelTrack="0.80" release="0.23">
+        <group ampVelTrack="0.80" release="0.31" volume="0.0dB" pan="5">
 
             <!-- PAD 08 :: ALT B (CLAP) -->
 
-            <sample loNote="39" rootNote="39" hiNote="39" loVel="0" hivel="20" path="Samples/wa_808tape_clap_04_clean.wav" />
+            <sample loNote="39" rootNote="39" hiNote="39" loVel="0" hivel="61" path="Samples/wa_808tape_clap_04_clean.wav" />
 
-            <sample loNote="39" rootNote="39" hiNote="39" lovel="21" hivel="64" path="Samples/wa_808tape_clap_04_sat.wav" />
+            <sample loNote="39" rootNote="39" hiNote="39" lovel="62" hivel="105" path="Samples/wa_808tape_clap_04_sat.wav" />
 
-            <sample loNote="39" rootNote="39" hiNote="39" loVel="65" hivel="127" path="Samples/wa_808tape_clap_04_sat2.wav" />
+            <sample loNote="39" rootNote="39" hiNote="39" loVel="106" hivel="127" path="Samples/wa_808tape_clap_04_sat2.wav" />
 
             <!-- ALT B (CLAP) :: END -->
+
+            <effects>
+
+                <!-- [G] 07 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="100" />
+
+            </effects>
             
         </group>
 
-        <!-- GROUP 07 :: PAD 09 -->
+        <!-- GROUP 08 :: PAD 09 -->
         
-        <group ampVelTrack="0.70" release="0.14">
+        <group ampVelTrack="0.70" release="0.19" volume="5.2dB" pan="15">
 
             <!-- PAD 09 :: CLOSED HAT -->
 
-            <sample loNote="42" rootNote="42" hiNote="42" loVel="0" hivel="20" path="Samples/wa_808tape_closedhat_01_clean.wav" />
+            <sample loNote="42" rootNote="42" hiNote="42" loVel="0" hivel="61" path="Samples/wa_808tape_closedhat_01_clean.wav" />
 
-            <sample loNote="42" rootNote="42" hiNote="42" lovel="21" hivel="64" path="Samples/wa_808tape_closedhat_01_sat.wav" />
+            <sample loNote="42" rootNote="42" hiNote="42" lovel="62" hivel="105" path="Samples/wa_808tape_closedhat_01_sat.wav" />
 
-            <sample loNote="42" rootNote="42" hiNote="42" loVel="65" hivel="127" path="Samples/wa_808tape_closedhat_01_sat2.wav" />
+            <sample loNote="42" rootNote="42" hiNote="42" loVel="106" hivel="127" path="Samples/wa_808tape_closedhat_01_sat2.wav" />
 
             <!-- CLOSED HAT :: END -->
 
         </group>
 
-        <!-- GROUP 08:: PAD 10 -->
+        <!-- GROUP 09 :: PAD 10 -->
         
-        <group ampVelTrack="0.70" release="0.14">
+        <group ampVelTrack="0.70" release="0.19" volume="5.8dB" pan="15">
 
             <!-- PAD 10 :: CLOSED HAT (CHIK) -->
 
-            <sample loNote="44" rootNote="44" hiNote="44" loVel="0" hivel="20" path="Samples/wa_808tape_closedhat_10_clean.wav" />
+            <sample loNote="44" rootNote="44" hiNote="44" loVel="0" hivel="61" path="Samples/wa_808tape_closedhat_10_clean.wav" />
 
-            <sample loNote="44" rootNote="44" hiNote="44" lovel="21" hivel="64" path="Samples/wa_808tape_closedhat_10_sat.wav" />
+            <sample loNote="44" rootNote="44" hiNote="44" lovel="62" hivel="105" path="Samples/wa_808tape_closedhat_10_sat.wav" />
 
-            <sample loNote="44" rootNote="44" hiNote="44" loVel="65" hivel="127" path="Samples/wa_808tape_closedhat_10_sat2.wav" />
+            <sample loNote="44" rootNote="44" hiNote="44" loVel="106" hivel="127" path="Samples/wa_808tape_closedhat_10_sat2.wav" />
 
              <!-- CLOSED HAT :: END -->
 
         </group>
 
-        <!-- GROUP 09:: PAD 11 -->
+        <!-- GROUP 10 :: PAD 11 -->
         
-        <group ampVelTrack="0.70" release="0.17">
+        <group ampVelTrack="0.70" release="0.19" volume="4.2dB" pan="15">
 
             <!-- PAD 11 :: MID HAT -->
 
-            <sample loNote="45" rootNote="45" hiNote="45" loVel="0" hivel="20" path="Samples/wa_808tape_openhat_01_clean.wav" />
+            <sample loNote="45" rootNote="45" hiNote="45" loVel="0" hivel="61" path="Samples/wa_808tape_openhat_01_clean.wav" />
 
-            <sample loNote="45" rootNote="45" hiNote="45" lovel="21" hivel="64" path="Samples/wa_808tape_openhat_01_sat.wav" />
+            <sample loNote="45" rootNote="45" hiNote="45" lovel="62" hivel="105" path="Samples/wa_808tape_openhat_01_sat.wav" />
 
-            <sample loNote="45" rootNote="45" hiNote="45" loVel="65" hivel="127" path="Samples/wa_808tape_openhat_01_sat2.wav" />
+            <sample loNote="45" rootNote="45" hiNote="45" loVel="106" hivel="127" path="Samples/wa_808tape_openhat_01_sat2.wav" />
 
             <!-- MID HAT :: END -->
 
+            <effects>
+
+                <!-- [G] 10 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="400" />
+
+            </effects>
+
         </group>
 
-        <!-- GROUP 10:: PAD 12 -->
+        <!-- GROUP 11 :: PAD 12 -->
         
-        <group ampVelTrack="0.70" release="0.86">
+        <group ampVelTrack="0.70" release="1.10" volume="3.1dB" pan="15">
 
             <!-- PAD 12 :: OPEN HAT -->
 
-            <sample loNote="47" rootNote="47" hiNote="47" loVel="0" hivel="20" path="Samples/wa_808tape_openhat_03_clean.wav" />
+            <sample loNote="47" rootNote="47" hiNote="47" loVel="0" hivel="61" path="Samples/wa_808tape_openhat_03_clean.wav" />
 
-            <sample loNote="47" rootNote="47" hiNote="47" lovel="21" hivel="64" path="Samples/wa_808tape_openhat_03_sat.wav" />
+            <sample loNote="47" rootNote="47" hiNote="47" lovel="62" hivel="105" path="Samples/wa_808tape_openhat_03_sat.wav" />
 
-            <sample loNote="47" rootNote="47" hiNote="47" loVel="65" hivel="127" path="Samples/wa_808tape_openhat_03_sat2.wav" />
+            <sample loNote="47" rootNote="47" hiNote="47" loVel="106" hivel="127" path="Samples/wa_808tape_openhat_03_sat2.wav" />
 
             <!-- OPEN HAT :: END -->
 
+            <effects>
+
+                <!-- [G] 11 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="150" />
+
+            </effects>
+
         </group>
 
-        <!-- GROUP 11:: PAD 13 -->
+        <!-- GROUP 12 :: PAD 13 -->
         
-        <group ampVelTrack="0.90" release="3.85">
+        <group ampVelTrack="0.90" release="4.83" volume="6.8dB" pan="-25">
 
             <!-- PAD 13 :: CRASH -->
 
-            <sample loNote="48" rootNote="48" hiNote="48" loVel="0" hivel="20" path="Samples/wa_808tape_crash_04_clean.wav" />
+            <sample loNote="48" rootNote="48" hiNote="48" loVel="0" hivel="61" path="Samples/wa_808tape_crash_04_clean.wav" />
 
-            <sample loNote="48" rootNote="48" hiNote="48" lovel="21" hivel="64" path="Samples/wa_808tape_crash_04_sat.wav" />
+            <sample loNote="48" rootNote="48" hiNote="48" lovel="62" hivel="105" path="Samples/wa_808tape_crash_04_sat.wav" />
 
-            <sample loNote="48" rootNote="48" hiNote="48" loVel="65" hivel="127" path="Samples/wa_808tape_crash_04_sat2.wav" />
+            <sample loNote="48" rootNote="48" hiNote="48" loVel="106" hivel="127" path="Samples/wa_808tape_crash_04_sat2.wav" />
 
             <!-- CRASH :: END -->
 
+            <effects>
+
+                <!-- [G] 12 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="450" />
+
+            </effects>
+
         </group>
 
-        <!-- GROUP 12:: PAD 14 -->
+        <!-- GROUP 13 :: PAD 14 -->
         
-        <group ampVelTrack="0.90" release="1.37">        
+        <group ampVelTrack="0.90" release="1.72" volume="1.2dB" pan="-10">        
 
             <!-- PAD 14 :: CRASH (ALT) -->
 
-            <sample loNote="50" rootNote="50" hiNote="50" loVel="0" hivel="20" path="Samples/wa_808tape_crash_01_clean.wav" />
+            <sample loNote="50" rootNote="50" hiNote="50" loVel="0" hivel="61" path="Samples/wa_808tape_crash_01_clean.wav" />
 
-            <sample loNote="50" rootNote="50" hiNote="50" lovel="21" hivel="64" path="Samples/wa_808tape_crash_01_sat.wav" />
+            <sample loNote="50" rootNote="50" hiNote="50" lovel="62" hivel="105" path="Samples/wa_808tape_crash_01_sat.wav" />
 
-            <sample loNote="50" rootNote="50" hiNote="50" loVel="65" hivel="127" path="Samples/wa_808tape_crash_01_sat2.wav" />
+            <sample loNote="50" rootNote="50" hiNote="50" loVel="106" hivel="127" path="Samples/wa_808tape_crash_01_sat2.wav" />
 
             <!-- CRASH (ALT) :: END -->
 
+            <effects>
+
+                <!-- [G] 13 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="50" />
+
+            </effects>
+
         </group>
 
-        <!-- GROUP 13:: PAD 15 -->
+        <!-- GROUP 14 :: PAD 15 -->
 
-        <group ampVelTrack="0.70" release="0.04"> 
+        <group ampVelTrack="0.70" release="0.06" volume="11.3dB" pan="10">
 
             <!-- PAD 15 :: MARACAS (FX) -->
 
-            <sample loNote="49" rootNote="49" hiNote="49" loVel="0" hivel="20" path="Samples/wa_808tape_maracas_04_clean.wav" />
-
-            <sample loNote="49" rootNote="49" hiNote="49" loVel="0" hivel="20" path="Samples/wa_808tape_maracas_04_sat.wav" />
-
-            <sample loNote="49" rootNote="49" hiNote="49" loVel="0" hivel="20" path="Samples/wa_808tape_maracas_04_sat2.wav" />
+            <sample loNote="49" rootNote="49" hiNote="49" path="Samples/wa_808tape_maracas_04_sat2.wav" />
 
             <!-- MARACAS (FX) :: END -->
 
         </group>
 
-        <!-- GROUP 14:: PAD 16 -->
+        <!-- GROUP 15 :: PAD 16 -->
 
-        <group ampVelTrack="0.70" release="0.05"> 
+        <group ampVelTrack="0.70" release="0.07" volume="12.8dB" pan="30"> 
 
             <!-- PAD 16 :: CLAVE -->
 
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="0" hivel="20" path="Samples/wa_808tape_clave_02_clean.wav" />
-
-            <sample loNote="46" rootNote="46" hiNote="46" lovel="21" hivel="64" path="Samples/wa_808tape_clave_02_sat.wav" />
-
-            <sample loNote="46" rootNote="46" hiNote="46" loVel="65" hivel="127" path="Samples/wa_808tape_clave_02_sat2.wav" />
+            <sample loNote="46" rootNote="46" hiNote="46" path="Samples/wa_808tape_clave_02_sat2.wav" />
 
             <!-- CLAVE :: END -->
                         
