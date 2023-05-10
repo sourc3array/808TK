@@ -137,10 +137,10 @@
             
             <effects>
                 
-                <!-- [G] 00 [FX] 01 :: Lo-Pass Filter -->
+                <!-- [G] 00 [FX] 00 :: Lo-Pass Filter -->
                 <effect type="lowpass" resonance="0.33" frequency="200" />
 
-                <!-- [G] 00 [FX] 02 :: Gain -->
+                <!-- [G] 00 [FX] 01 :: Gain -->
                 <effect type="gain" level="3.0" />
 
             </effects>
@@ -165,7 +165,7 @@
         
         <!-- GROUP 02 :: TOM A -->
         
-        <group ampVelTrack="0.80" release="0.66" volume="9.9dB" pan="-50">
+        <group ampVelTrack="0.80" release="0.76" volume="9.9dB" pan="-50">
         
             <!-- PAD 03 :: TOM A (LO) -->
 
@@ -188,7 +188,7 @@
 
         <!-- GROUP 03 :: TOM B -->
         
-        <group ampVelTrack="0.80" release="0.66" volume="3.5dB" pan="-15">
+        <group ampVelTrack="0.80" release="0.55" volume="3.5dB" pan="-15">
 
             <!-- PAD 04 :: TOM B (HI) -->
 
@@ -296,7 +296,7 @@
 
         <!-- GROUP 08 :: PAD 09 -->
         
-        <group ampVelTrack="0.70" release="0.19" volume="5.2dB" pan="15">
+        <group ampVelTrack="0.70" release="0.19" volume="5.2dB" pan="15" tags="hats-c" silencedByTags="hats-c" silencingMode="fast">
 
             <!-- PAD 09 :: CLOSED HAT -->
 
@@ -312,7 +312,7 @@
 
         <!-- GROUP 09 :: PAD 10 -->
         
-        <group ampVelTrack="0.70" release="0.19" volume="5.8dB" pan="15">
+        <group ampVelTrack="0.70" release="0.19" volume="5.8dB" pan="15" tags="hats-c" silencedByTags="hats-c" silencingMode="fast">
 
             <!-- PAD 10 :: CLOSED HAT (CHIK) -->
 
@@ -328,7 +328,7 @@
 
         <!-- GROUP 10 :: PAD 11 -->
         
-        <group ampVelTrack="0.70" release="0.19" volume="4.2dB" pan="15">
+        <group ampVelTrack="0.70" release="0.19" volume="4.2dB" pan="15" tags="hats-m" silencedByTags="hats-c" silencingMode="fast">
 
             <!-- PAD 11 :: MID HAT -->
 
@@ -351,7 +351,7 @@
 
         <!-- GROUP 11 :: PAD 12 -->
         
-        <group ampVelTrack="0.70" release="1.10" volume="3.1dB" pan="15">
+        <group ampVelTrack="0.70" release="1.10" volume="3.1dB" pan="15" tags="hats-o" silencedByTags="hats-c,hats-m" silencingMode="fast">
 
             <!-- PAD 12 :: OPEN HAT -->
 
@@ -374,7 +374,7 @@
 
         <!-- GROUP 12 :: PAD 13 -->
         
-        <group ampVelTrack="0.90" release="4.83" volume="6.8dB" pan="-25">
+        <group ampVelTrack="0.90" release="4.83" volume="6.8dB" pan="-25" tags="crash-a">
 
             <!-- PAD 13 :: CRASH -->
 
@@ -397,7 +397,7 @@
 
         <!-- GROUP 13 :: PAD 14 -->
         
-        <group ampVelTrack="0.90" release="1.72" volume="1.2dB" pan="-10">        
+        <group ampVelTrack="0.90" release="1.72" volume="1.2dB" pan="-10" tags="crash-b">        
 
             <!-- PAD 14 :: CRASH (ALT) -->
 
@@ -443,5 +443,14 @@
         </group>
 
     </groups>
+
+    <tags>
+
+        <tag name="hats-m" polyphony="3" />
+        <tag name="hats-0" polyphony="3" />
+        <tag name="crash-a" polyphony="1" />
+        <tag name="crash-b" polyphony="3" />
+
+    </tags>
 
 </DecentSampler>
