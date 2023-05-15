@@ -46,9 +46,9 @@
             
             <control x="160" y="55" width="48" height="48" parameterName="DRUMS_B_VOL" type="float" minValue="0" maxValue="1" value="0.92" style="custom_skin_vertical_drag" customSkinImage="UI/Controls/Knob_808_T.png" customSkinNumFrames="101" >
                 
-                <binding type="amp" level="group" position="1" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="0.33" />
+                <binding type="amp" level="group" position="1" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1.00" />
                                 
-                <binding type="amp" level="group" position="3" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="0.66" />
+                <binding type="amp" level="group" position="3" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1.00" />
 
                 <binding type="amp" level="group" position="5" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1.00" />
 
@@ -112,7 +112,7 @@
 
                 <binding type="amp" level="group" position="16" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
                 
-                <binding type="amp" level="group" position="17" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="0.92" />
+                <binding type="amp" level="group" position="17" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
                 <binding type="amp" level="group" position="18" parameter="AMP_VOLUME" translation="linear" translationOutputMin="0" translationOutputMax="1" />
 
@@ -251,7 +251,7 @@
 
         <!-- GROUP 00 :: PAD 01 [A] -->
 
-        <group ampVelTrack="0.80" release="0.31" volume="18.0dB" groupTuning="-12.0">
+        <group ampVelTrack="0.80" release="0.31" volume="16.1dB" groupTuning="-12.0">
 
             <!-- PAD 01 [A] :: KICK-A (SUB) -->
 
@@ -263,11 +263,11 @@
             
             <effects>
 
-                <!-- [G] 00 [FX] 00 :: Low-Pass Filter -->
+                <!-- [G] 00 [FX] 00 :: Lo-Pass Filter -->
                 <effect type="lowpass" resonance="0.33" frequency="200" />
 
                 <!-- [G] 00 [FX] 01 :: Gain -->
-                <effect type="gain" level="4.5" />
+                <effect type="gain" level="3.0" />
 
             </effects>
             
@@ -275,7 +275,7 @@
 
         <!-- GROUP 01 :: PAD 01 [B] -->
 
-        <group ampVelTrack="0.80" release="0.76" volume="9.0dB" groupTuning="-12.0">
+        <group ampVelTrack="0.80" release="0.76" volume="13.7dB" groupTuning="-12.0">
 
             <!-- PAD 01 [B] :: FX-TOM >  -->
 
@@ -298,11 +298,8 @@
             
             <effects>
 
-                <!-- [G] 01 [FX] 00 :: Low-Pass Filter -->
-                <effect type="lowpass" resonance="1.50" frequency="400" />
-
-                <!-- [G] 01 [FX] 01 :: Waveshapaer -->
-                <effect type="wave_shaper" drive="100" driveBoost="0.05" outputLevel="0.05" />
+                <!-- [G] 01 [FX] 00 :: Lo-Pass Filter -->
+                <effect type="lowpass" resonance="0.33" frequency="400" />
 
             </effects>
             
@@ -310,7 +307,7 @@
         
         <!-- GROUP 02 :: PAD 02 [A] -->
         
-        <group ampVelTrack="0.80" release="2.49" volume="5.0dB">
+        <group ampVelTrack="0.80" release="2.49" volume="5.2dB">
 
             <!-- PAD 02 [A] :: KICK-B -->
 
@@ -326,7 +323,7 @@
 
         <!-- GROUP 03 :: PAD 02 [B] -->
         
-        <group ampVelTrack="0.80" release="0.31" volume="7.6dB" >
+        <group ampVelTrack="0.80" release="0.31" volume="14.4dB">
 
             <!-- PAD 02 [B] :: FX-KICK -->
 
@@ -335,12 +332,22 @@
             <sample loNote="36" rootNote="36" hiNote="36" loVel="86" hivel="127" path="Samples/wa_808tape_kick_01_sat2.wav" />
 
             <!-- FX-KICK :: END -->
+
+            <effects>
+
+                <!-- [G] 03 [FX] 00 :: Lo-Pass Filter -->
+                <effect type="lowpass" resonance="0.33" frequency="400" />
+
+                <!-- [G] 03 [FX] 00 :: WaveFolder -->
+                <effect type="wave_folder" drive="100" threshold="0.33" />
+
+            </effects>
             
         </group>
         
         <!-- GROUP 04 :: PAD 03 [A] -->
         
-        <group ampVelTrack="0.80" release="0.76" volume="14.3dB">
+        <group ampVelTrack="0.80" release="0.76" volume="9.3dB" pan="-50">
         
             <!-- PAD 03 :: TOM-A (LO) -->
 
@@ -351,26 +358,40 @@
             <sample loNote="41" rootNote="41" hiNote="41" loVel="106" hivel="127" path="Samples/wa_808tape_lotom_02_sat2.wav" />
             
             <!-- TOM-A (LO) :: END -->
+
+            <effects>
+
+                <!-- [G] 04 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="30" />
+
+            </effects>
             
         </group>
 
         <!-- GROUP 05 :: PAD 03 [B] -->
         
-        <group ampVelTrack="0.80" release="0.56" volume="3.2dB" groupTuning="-12.0">
+        <group ampVelTrack="0.80" release="0.56" volume="5.6dB" pan="-50" groupTuning="-12.0">
         
-            <!-- PAD 03 :: FX-TOM -->
+            <!-- PAD 03 [B] :: FX-TOM -->
 
             <sample loNote="41" rootNote="41" hiNote="41" loVel="0" hivel="85" path="Samples/wa_808tape_midtom_01_clean.wav" />
 
             <sample loNote="41" rootNote="41" hiNote="41" loVel="86" hivel="127" path="Samples/wa_808tape_midtom_01_sat.wav" />
             
             <!-- FX-TOM :: END -->
+
+            <effects>
+
+                <!-- [G] 05 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="15" />
+
+            </effects>
             
         </group>
         
         <!-- GROUP 06 :: PAD 04 [A] -->
         
-        <group ampVelTrack="0.80" release="0.55" volume="6.5dB">
+        <group ampVelTrack="0.80" release="0.55" volume="3.9dB" pan="-15">
 
             <!-- PAD 04 [A] :: TOM-B (HI) -->
 
@@ -384,8 +405,8 @@
             
             <effects>
 
-                <!-- [G] 06 [FX] 00 :: Low-Pass Filter -->
-                <effect type="lowpass" resonance="0.3" frequency="1200" />
+                <!-- [G] 06 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="50" />
 
             </effects>
 
@@ -393,21 +414,28 @@
 
         <!-- GROUP 07 :: PAD 04 [B] -->
         
-        <group ampVelTrack="0.80" release="0.43" volume="11.8dB" groupTuning="-12.0">
+        <group ampVelTrack="0.80" release="0.43" volume="15.3dB" pan="-15" groupTuning="-12.0">
         
             <!-- PAD 04 [B] :: FX-TOM -->
 
             <sample loNote="43" rootNote="43" hiNote="43" loVel="0" hivel="85" path="Samples/wa_808tape_hitom_02_clean.wav" />
 
-            <sample loNote="43" rootNote="43" hiNote="43" loVel="86" hivel="127" path="Samples/wa_808tape_hitom_02_sat.wav" />
+            <sample loNote="43" rootNote="43" hiNote="43" loVel="86" hivel="127" path="Samples/wa_808tape_hitom_03_sat.wav" />
             
             <!-- FX-TOM :: END -->
+
+            <effects>
+
+                <!-- [G] 07 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="25" />
+
+            </effects>
             
         </group>
 
         <!-- GROUP 08 :: PAD 05 [A] -->
         
-        <group ampVelTrack="0.90" release="0.29" volume="9.4dB">
+        <group ampVelTrack="0.90" release="0.29" volume="9.3dB">
 
             <!-- PAD 05 [A] :: SNARE-A -->
 
@@ -418,12 +446,22 @@
             <sample loNote="38" rootNote="38" hiNote="38" loVel="106" hivel="127" path="Samples/wa_808tape_snare_01_sat2.wav" />
         
             <!-- SNARE-A :: END -->
+
+            <effects>
+
+                <!-- [G] 08 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="80" />
+
+                <!-- [G] 08 [FX] 00 :: WaveFolder -->
+                <effect type="wave_folder" drive="150" threshold="0.50" />
+
+            </effects>
             
         </group>
 
         <!-- GROUP 09 :: PAD 05 [B] -->
         
-        <group ampVelTrack="0.90" release="0.29" volume="8.8dB">
+        <group ampVelTrack="0.90" release="0.29" volume="8.6dB">
 
             <!-- PAD 05 [B] :: FX-SNARE -->
 
@@ -448,7 +486,7 @@
         
         <!-- GROUP 10 :: PAD 06 [A] -->
         
-        <group ampVelTrack="0.90" release="0.31" volume="4.7dB">
+        <group ampVelTrack="0.90" release="0.31" volume="2.9dB">
 
             <!-- PAD 06 [A] :: SNARE-B (ALT) -->
 
@@ -460,14 +498,18 @@
             
             <!-- SNARE-B (ALT) :: END -->
 
-            <!-- [G] 10 [FX] 00 :: Waveshapaer -->
-            <effect type="wave_shaper" drive="169" driveBoost="0.11" outputLevel="0.11" />
+            <effects>
+
+                <!-- [G] 10 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="100" />
+
+            </effects>
             
         </group>
 
         <!-- GROUP 11 :: PAD 06 [B] -->
         
-        <group ampVelTrack="0.90" release="0.29" volume="7.8dB">
+        <group ampVelTrack="0.90" release="0.29" volume="8.55dB">
 
             <!-- PAD 06 [B] :: FX-SNARE -->
 
@@ -476,12 +518,19 @@
             <sample loNote="40" rootNote="40" hiNote="40" loVel="86" hivel="127" path="Samples/wa_808tape_snare_01_sat.wav" />
             
             <!-- FX-SNARE :: END -->
+
+            <effects>
+
+                <!-- [G] 11 [FX] 00 :: WaveFolder -->
+                <effect type="wave_folder" drive="50" threshold="0.66" />
+
+            </effects>
             
         </group>
         
         <!-- GROUP 12 :: PAD 07 -->
         
-        <group ampVelTrack="0.80" release="0.08" volume="1.0dB">
+        <group ampVelTrack="0.80" release="0.08" volume="1.0dB" pan="-5">
 
             <!-- PAD 07 :: ALT-A (RIM) -->
 
@@ -497,7 +546,7 @@
         
         <!-- GROUP 13 :: PAD 08 -->
         
-        <group ampVelTrack="0.8" release="0.31" volume="-2.5dB" >
+        <group ampVelTrack="0.8" release="0.33" volume="-2.2dB" pan="5">
 
             <!-- PAD 08 [A] :: ALT-B (Clap) [A] -->
 
@@ -524,12 +573,19 @@
             <sample loNote="39" rootNote="39" hiNote="39" loVel="106" hivel="127" seqMode="true_random" seqLength="3" seqPosition="3" path="Samples/wa_808tape_clap_03_sat.wav" />
 
             <!-- ALT-B (CLAP) :: END -->
+
+            <effects>
+
+                <!-- [G] 13 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="100" />
+
+            </effects>
             
         </group>
 
         <!-- GROUP 14 :: PAD 09 -->
         
-        <group ampVelTrack="0.70" release="0.19" volume="7.7dB">
+        <group ampVelTrack="0.70" release="0.19" volume="14.5dB" pan="15" tags="hats-c" silencedByTags="hats-c" silencingMode="fast">
 
             <!-- PAD 09 :: CLOSED HAT -->
 
@@ -545,7 +601,7 @@
 
         <!-- GROUP 15 :: PAD 10 -->
         
-        <group ampVelTrack="0.70" release="0.19" volume="8.2dB">
+        <group ampVelTrack="0.70" release="0.19" volume="12.5dB" pan="15" tags="hats-c" silencedByTags="hats-c" silencingMode="fast">
 
             <!-- PAD 10 :: CLOSED HAT (CHIK) -->
 
@@ -561,7 +617,7 @@
 
         <!-- GROUP 16 :: PAD 11 [V1]+[V2] -->
         
-        <group ampVelTrack="1.00" release="0.19" volume="8.2dB">
+        <group ampVelTrack="1.00" release="0.19" volume="9.5dB" pan="15" tags="hats-m" silencedByTags="hats-c" silencingMode="fast">
 
             <!-- PAD 11 :: MID HAT -->
 
@@ -571,11 +627,18 @@
 
             <!-- MID HAT :: END -->
 
+            <effects>
+
+                <!-- [G] 16 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="400" />
+
+            </effects>
+
         </group>
 
         <!-- GROUP 17 :: PAD 11 [V3A] -->
 
-        <group ampVelTrack="1.00" release="0.19" volume="8.2dB">
+        <group ampVelTrack="1.00" release="0.19" volume="9.5dB" pan="15" tags="hats-m" silencedByTags="hats-c" silencingMode="fast">
 
             <!-- PAD 11 :: MID HAT [Tight] -->
 
@@ -583,11 +646,18 @@
 
             <!-- MID HAT [Tight] :: END -->
 
+            <effects>
+
+                <!-- [G] 17 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="400" />
+
+            </effects>
+
         </group>
 
         <!-- GROUP 18 :: PAD 11 [V3B] -->
 
-        <group ampVelTrack="1.00" release="0.43" volume="8.2dB">
+        <group ampVelTrack="1.00" release="0.43" volume="9.5dB" pan="15" tags="hats-o" silencedByTags="hats-c,hats-m" silencingMode="fast">
 
             <!-- PAD 11 :: MID HAT [Loose] -->
 
@@ -599,7 +669,7 @@
 
         <!-- GROUP 19 :: PAD 12 -->
         
-        <group ampVelTrack="0.70" volume="5.7dB">
+        <group ampVelTrack="0.70" volume="5.2dB" pan="15" tags="hats-o" silencedByTags="hats-c,hats-m" silencingMode="fast">
 
             <!-- PAD 12 :: OPEN HAT -->
 
@@ -611,11 +681,18 @@
 
             <!-- OPEN HAT :: END -->
 
+            <effects>
+
+                <!-- [G] 11 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="150" />
+
+            </effects>
+
         </group>
 
         <!-- GROUP 20 :: PAD 13 -->
         
-        <group ampVelTrack="0.90" volume="9.2dB">
+        <group ampVelTrack="0.90" volume="14.2dB" pan="-25" tags="crash-a" silencedByTags="crash-a" silencingMode="fast">
 
             <!-- PAD 13 :: CRASH -->
 
@@ -627,11 +704,18 @@
 
             <!-- CRASH :: END -->
 
+            <effects>
+
+                <!-- [G] 12 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="450" />
+
+            </effects>
+
         </group>
 
         <!-- GROUP 21 :: PAD 14 -->
         
-        <group ampVelTrack="0.90" volume="2.9dB">        
+        <group ampVelTrack="0.90" volume="7.2dB" pan="-10" tags="crash-b" silencedByTags="crash-b" silencingMode="fast">        
 
             <!-- PAD 14 :: CRASH-ALT -->
 
@@ -643,11 +727,18 @@
 
             <!-- CRASH-ALT :: END -->
 
+            <effects>
+
+                <!-- [G] 13 [FX] 00 :: Hi-Pass Filter -->
+                <effect type="highpass" resonance="0.33" frequency="50" />
+
+            </effects>
+
         </group>
 
         <!-- GROUP 22 :: PAD 15 [A] -->
 
-        <group ampVelTrack="0.70" release="0.06" volume="3.5dB">
+        <group ampVelTrack="0.70" release="0.06" volume="5.5dB" pan="10">
 
             <!-- PAD 15 [A] :: MARACAS -->
 
@@ -671,16 +762,13 @@
 
             <!-- MARACAS :: END -->
 
-            <!-- [G] 22 [FX] 00 :: Low-Pass Filter -->
-            <effect type="lowpass" resonance="0.1" frequency="150" />
-
         </group>
 
         <!-- GROUP 23 :: PAD 15 [B] -->
 
-        <group ampVelTrack="0.70" release="1.08" pitch="-12" volume="3.5dB">
+        <group ampVelTrack="0.70" release="1.08" volume="11.5dB" pan="10" pitch="-12">
 
-            <!-- PAD 15 [B] :: PERC-FX (Clave) -->
+            <!-- PAD 15 [B] :: PERC-FX (Cowbell) -->
 
             <!--  V-LAYER 01 > ROUND-ROBIN 01 -->
             <sample loNote="46" rootNote="46" hiNote="46" loVel="0" hivel="85" seqMode="true_random" seqLength="3" seqPosition="1" path="Samples/wa_808tape_clave_01_clean.wav" />
@@ -700,32 +788,32 @@
             <!--  V-LAYER 02 > ROUND-ROBIN 03 -->
             <sample loNote="46" rootNote="46" hiNote="46" loVel="86" hivel="127" seqMode="true_random" seqLength="3" seqPosition="3" path="Samples/wa_808tape_clave_03_sat.wav" />
 
-            <!-- PERC-FX (Clave) :: END -->
-
-            <!-- [G] 23 [FX] 00 :: Waveshapaer -->
-            <effect type="wave_shaper" drive="333" driveBoost="0.33" outputLevel="0.11" />
+            <!-- PERC-FX (Cowbell) :: END -->
 
         </group>
 
         <!-- GROUP 24 :: PAD 16 [A] -->
 
-        <group ampVelTrack="0.70" release="0.07" volume="2.9dB"> 
+        <group ampVelTrack="0.70" release="0.07" volume="13.0dB" pan="30"> 
 
-            <!-- PAD 15 :: MARACAS -->
+            <!-- PAD 15 :: PERC A -->
 
-            <sample loNote="49" rootNote="49" hiNote="49" loVel="0" hivel="61" path="Samples/wa_808tape_maracas_03_clean.wav" />
+            <sample loNote="49" rootNote="49" hiNote="49" path="Samples/wa_808tape_maracas_03_sat2.wav" />
 
-            <sample loNote="49" rootNote="49" hiNote="49" lovel="62" hivel="105" path="Samples/wa_808tape_maracas_03_sat.wav" />
+            <!-- PERC A :: END -->
 
-            <sample loNote="49" rootNote="49" hiNote="49" loVel="106" hivel="127" path="Samples/wa_808tape_maracas_03_sat2.wav" />
+            <effects>
 
-            <!-- MARACAS :: END -->
+                <!-- [G] 24 [FX] 00 :: WaveFolder -->
+                <effect type="wave_folder" drive="150" threshold="0.50" />
+
+            </effects>
                         
         </group>
 
         <!-- GROUP 24 :: PAD 16 [B] -->
 
-         <group ampVelTrack="0.90" release="0.31" groupTuning="12.0" volume="2.9dB">
+         <group ampVelTrack="0.90" release="0.31" volume="11.6dB" pan="30" groupTuning="12.0">
 
             <!-- PAD 16 [B] :: SNARE-FX -->
 
@@ -741,21 +829,13 @@
             <!--  V-LAYER 01 > ROUND-ROBIN 04 -->
             <sample loNote="49" rootNote="49" hiNote="49" seqMode="true_random" seqLength="5" seqPosition="4" path="Samples/wa_808tape_snare_23_sat.wav" />
 
-            <!--  V-LAYER 01 > ROUND-ROBIN 05 [Phantom] -->
-
-            <!-- [G] 24 [FX] 00 :: Hi-Pass Filter -->
-            <effect type="hipass" resonance="0.33" frequency="2000" />
-
-            <!-- [G] 24 [FX] 01 :: Waveshapaer -->
-            <effect type="wave_shaper" drive="333" driveBoost="0.33" outputLevel="0.33" />
-
-            <!-- SNARE FX :: END -->
+            <!--  V-LAYER 01 > ROUND-ROBIN 05 [Phantoms] -->
                         
         </group>
 
     </groups>
 
-    <!-- MIDI CCs -->
+        <!-- MIDI CCs -->
 
     <midi>
 
